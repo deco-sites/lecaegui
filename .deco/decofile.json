@@ -269,9 +269,10 @@
     "sections": [
       {
         "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p><strong>💙 Save the Date 💚</strong></p>",
+        "title": "<h1><strong>💙 Save the Date 💚</strong></h1>",
         "cta": [],
-        "description": "3 de Maio de 2025 — Alexia e Guilherme — Itaipava"
+        "description": "3 de Maio de 2025 — Alexia e Guilherme — Itaipava",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/e2891734-c713-44a5-b693-b52db48487bb"
       },
       {
         "__resolveType": "site/sections/ImageWithParagraph.tsx",
