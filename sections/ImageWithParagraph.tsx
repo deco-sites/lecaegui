@@ -44,7 +44,7 @@ export default function ImageWithParagraph({
   ],
 }: Props) {
   return (
-    <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm">
+    <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-lg">
       <div
         class={`flex ${
           PLACEMENT[placement]
@@ -65,13 +65,13 @@ export default function ImageWithParagraph({
           />
         </div>
         <div class="w-full md:w-1/2 space-y-2 md:space-y-4 md:max-w-xl gap-4 z-10">
-          <p class="text-sm font-semibold">
+          <p class="text-md font-semibold">
             {tagline}
           </p>
           <p class="text-4xl leading-snug">
             {title}
           </p>
-          <p class="leading-normal">
+          <p class="leading-normal text-xl ">
             {description}
           </p>
           <div class="flex gap-3 pt-4">
