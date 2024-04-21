@@ -101,6 +101,9 @@
     "cta": [],
     "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
   },
+  "Preview /sections/ImageWithParagraph.tsx": {
+    "__resolveType": "site/sections/ImageWithParagraph.tsx"
+  },
   "Preview /sections/hero-1.tsx": {
     "__resolveType": "site/sections/hero-1.tsx"
   },
@@ -110,6 +113,9 @@
   "Preview Sections MyHero": {
     "name": "works!",
     "__resolveType": "site/sections/myHero.tsx"
+  },
+  "Preview site/sections/ImageWithParagraph.tsx": {
+    "__resolveType": "site/sections/ImageWithParagraph.tsx"
   },
   "Serene Coastline": {
     "__resolveType": "site/sections/Theme/Theme.tsx",
@@ -262,40 +268,24 @@
     "path": "/",
     "sections": [
       {
-        "__resolveType": "site/sections/Header.tsx"
-      },
-      {
         "__resolveType": "website/sections/Seo/SeoV2.tsx",
         "title": "Landing",
         "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/43999173-3786-4a4b-be09-5d7313d0bc3b"
       },
       {
         "__resolveType": "site/sections/Hero.tsx",
+        "title": "<p><strong>💙 Save the Date 💚</strong></p>",
         "cta": [],
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
+        "description": "3 de Maio de 2025 — Alexia e Guilherme — Itaipava"
       },
       {
         "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Footer.tsx"
+        "placement": "right",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/199a5c60-9bd3-4af4-9f5b-18c79d3be58e",
+        "title": "Vamos nos divertir num feriado prolongado!",
+        "tagline": "1 a 3 de Maio de 2025 - Itaipava - Rio de Janeiro",
+        "description": "Vamos curtir um fim de semana animado na serra do Rio. Vai ter programa pra todos os gostos, um esquenta na sexta e a festa mesmo no sábado, dia 3. Tranca a agenda, compre as passagens e nos vemos em breve!",
+        "cta": []
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
@@ -303,14 +293,12 @@
   "site": {
     "seo": {
       "type": "website",
-      "title": "Landing",
+      "title": "Alexia e Guilherme - 3 de Maio de 2025 - Save the date",
       "jsonLDs": [],
       "noIndexing": false,
-      "description": "Improve your page performance with deco.cx",
-      "titleTemplate": "Landing | deco.cx",
-      "descriptionTemplate": "%s | Deco.cx",
-      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/f5603dbc-ee36-4864-aaf3-ea52b257d5b2",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/9c94b074-ae4d-4b63-a20b-7d48ce69971a"
+      "description": "Venha comemorar nosso casamento conosco dia 3 de Maio de 2025 💙💚",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/1cedcb35-0b3f-46ca-b4f5-c1944172084a",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/92ca1934-8f39-4826-bd2b-d8ec5738cec7"
     },
     "global": [
       {
@@ -333,11 +321,5 @@
     "theme": {
       "__resolveType": "Neutral"
     }
-  },
-  "Preview /sections/ImageWithParagraph.tsx": {
-    "__resolveType": "site/sections/ImageWithParagraph.tsx"
-  },
-  "Preview site/sections/ImageWithParagraph.tsx": {
-    "__resolveType": "site/sections/ImageWithParagraph.tsx"
   }
 }
