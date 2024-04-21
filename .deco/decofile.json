@@ -24,7 +24,7 @@
       "--tab-radius": "0.5rem"
     },
     "mainColors": {
-      "base-100": "#FDE5BE",
+      "base-100": "#fdf3b4",
       "primary": "#FF6502",
       "secondary": "#FEC902",
       "tertiary": "#FF91B2",
@@ -39,7 +39,7 @@
       "fonts": [
         {
           "variations": [],
-          "family": "Shrikhand"
+          "family": "Garamond"
         }
       ]
     }
@@ -281,6 +281,9 @@
         "placement": "right",
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/199a5c60-9bd3-4af4-9f5b-18c79d3be58e",
         "tagline": "1 a 3 de Maio de 2025 - Itaipava - Rio de Janeiro"
+      },
+      {
+        "__resolveType": "website/sections/Seo/SeoV2.tsx"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
@@ -320,7 +323,7 @@
     "__resolveType": "site/apps/site.ts",
     "firstByteThresholdMS": false,
     "theme": {
-      "__resolveType": "Neutral"
+      "__resolveType": "Groovy Vibes"
     },
     "abTesting": {
       "replaces": [],
