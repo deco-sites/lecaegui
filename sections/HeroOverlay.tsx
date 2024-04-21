@@ -9,12 +9,16 @@ export interface CTA {
 }
 
 export interface Props {
-  title?: string;
+  title?: string; 
+  /** 
+   * @format rich-text
+   */
   description?: string;
   image?: ImageWidget;
   placement?: "left" | "right";
   cta?: CTA[];
   overlay?: boolean;
+  textColorTailwind: string;
   overlayBgColor?: string;
   overlayBorderRadius?: string;
   overlayBlur?: string;
@@ -33,6 +37,7 @@ export default function HeroFlats({
   placement = "left",
   cta = [],
   overlay = true,
+  textColorTailwind = "white",
   overlayBgColor = "rgba(255, 255, 255, 0.8)",
   overlayBorderRadius = "8px",
   overlayBlur = "4px",
@@ -50,8 +55,8 @@ export default function HeroFlats({
   } : {};
 
   return (
-    <nav class="lg:container lg:mx-auto mx-4">
-      <div class={`flex flex-col items-center gap-8 ${overlay ? "relative text-white" : ""}`}>
+    <nav class="lg:mx-auto mx-4">
+      <div class={`flex flex-col items-center gap-8 ${overlay ? "relative" : ""} text-${textColorTailwind}`}>
         {image && (
           <Image
             width={640}
@@ -64,7 +69,7 @@ export default function HeroFlats({
           />
         )}
         <div
-          class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 ${overlay ? "z-20 relative" : "z-10"} ${image ? PLACEMENT[placement] : "flex-col items-center justify-center text-center"
+          class={`flex w-full xl:mx-auto py-20 mx-5 md:mx-10 ${overlay ? "z-20 relative" : "z-10"} ${image ? PLACEMENT[placement] : "flex-col items-center justify-center text-center"
             } lg:py-36 gap-12 md:gap-20 items-center`}
         >
           <div
@@ -77,7 +82,7 @@ export default function HeroFlats({
                 __html: title,
               }}
             ></div>
-            <p class="text-lg md:text-md leading-[150%]">{description}</p>
+            <p class="text-lg md:text-md leading-[150%]" dangerouslySetInnerHTML={{ "__html": description}}></p>
             <div class="flex items-center gap-3">
               {cta?.map((item) => (
                 <a

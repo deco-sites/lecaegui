@@ -25,7 +25,7 @@
     },
     "mainColors": {
       "base-100": "#fdf3b4",
-      "primary": "#FF6502",
+      "primary": "#ffffff",
       "secondary": "#FEC902",
       "tertiary": "#FF91B2",
       "neutral": "#9934A6",
@@ -257,7 +257,17 @@
     "__resolveType": "site/apps/decohub.ts"
   },
   "hero": {
-    "__resolveType": "site/sections/Hero.tsx"
+    "__resolveType": "site/sections/HeroOverlay.tsx",
+    "title": "Save the Date",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/e2891734-c713-44a5-b693-b52db48487bb",
+    "overlay": true,
+    "overlayOpacity": 1,
+    "placement": "right",
+    "cta": [],
+    "description": "<p>03 de Maio de 2025<br>Itaipava — RJ</p>",
+    "textColor": "",
+    "overlayBgColor": "000",
+    "textColorTailwind": "primary"
   },
   "htmx": {
     "__resolveType": "decohub/apps/htmx.ts",
@@ -268,23 +278,10 @@
     "path": "/",
     "sections": [
       {
-        "__resolveType": "site/sections/HeroOverlay.tsx",
-        "title": "3 de Maio de 2025",
-        "description": "Guarde a data — Itaipava — RJ",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/e2891734-c713-44a5-b693-b52db48487bb",
-        "placement": "right",
-        "overlay": true,
-        "overlayBgColor": "#333333",
-        "overlayOpacity": 0.7
+        "__resolveType": "hero"
       },
       {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "title": "Casamento Alexia e Guilherme",
-        "description": "Vamos curtir um fim de semana animado na serra do Rio. Vamos ter um esquenta na sexta e a cerimônia e festa no sábado, dia 3. Reserve a sua agenda, compre as suas passagens e nos vemos em breve!",
-        "placement": "left",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/b4777a5e-f9db-43e6-927c-1675c78eacda",
-        "cta": [],
-        "tagline": "1 a 3 de Maio de 2025 - Itaipava - Rio de Janeiro"
+        "__resolveType": "text-image"
       },
       {
         "__resolveType": "website/sections/Seo/SeoV2.tsx"
@@ -338,5 +335,14 @@
   },
   "Preview /sections/HeroOverlay.tsx": {
     "__resolveType": "site/sections/HeroOverlay.tsx"
+  },
+  "text-image": {
+    "__resolveType": "site/sections/ImageWithParagraph.tsx",
+    "title": "Casamento Alexia e Guilherme",
+    "description": "Vamos curtir um fim de semana animado na serra do Rio. Vamos ter um esquenta na sexta e a cerimônia e festa no sábado, dia 3. Reserve a sua agenda, compre as suas passagens e nos vemos em breve!",
+    "placement": "left",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/b4777a5e-f9db-43e6-927c-1675c78eacda",
+    "cta": [],
+    "tagline": "1 a 3 de Maio de 2025 - Itaipava - Rio de Janeiro"
   }
 }
