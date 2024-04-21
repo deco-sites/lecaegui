@@ -32,7 +32,7 @@ export default function HeroFlats({
   title = "Click here to tweak this text however you want.",
   description =
     "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
-  image,
+  image = "https://placehold.co/3000x1800",
   placement = "left",
   cta = [
     { id: "change-me-1", href: "/", text: "Change me", outline: false },
