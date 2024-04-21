@@ -300,6 +300,9 @@
     "global": [
       {
         "__resolveType": "htmx/sections/htmx.tsx"
+      },
+      {
+        "__resolveType": "website/sections/Seo/SeoV2.tsx"
       }
     ],
     "routes": [
@@ -311,12 +314,19 @@
       }
     ],
     "caching": {
-      "directives": []
+      "directives": [],
+      "enabled": false
     },
     "__resolveType": "site/apps/site.ts",
     "firstByteThresholdMS": false,
     "theme": {
       "__resolveType": "Neutral"
+    },
+    "abTesting": {
+      "replaces": [],
+      "includeScriptsToHead": {
+        "includes": []
+      }
     }
   }
 }
