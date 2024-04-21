@@ -55,7 +55,7 @@ export default function HeroFlats({
   } : {};
 
   return (
-    <nav class="lg:mx-auto mx-4">
+    <nav class="lg:mx-auto">
       <div class={`flex flex-col items-center gap-8 ${overlay ? "relative" : ""} text-${textColorTailwind}`}>
         {image && (
           <Image
