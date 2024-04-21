@@ -261,7 +261,7 @@
   },
   "hero": {
     "__resolveType": "site/sections/HeroOverlay.tsx",
-    "title": "Save the Date",
+    "title": "<h1>Save the Date</h1>",
     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/e2891734-c713-44a5-b693-b52db48487bb",
     "overlay": true,
     "overlayOpacity": 1,
@@ -339,7 +339,7 @@
   "text-image": {
     "__resolveType": "site/sections/ImageWithParagraph.tsx",
     "title": "Casamento Alexia e Guilherme",
-    "description": "Vamos curtir um fim de semana animado na serra do Rio. Vamos ter um esquenta na sexta e a cerimônia e festa no sábado, dia 3. Reserve a sua agenda, compre as suas passagens e nos vemos em breve!",
+    "description": "Vamos curtir um fim de semana animado na serra do Rio. Vamos ter um esquenta na sexta e a cerimônia e festa no sábado, dia 3. Reserve a sua agenda, compre as suas passagens e voltamos com mais informaç!",
     "placement": "left",
     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/b4777a5e-f9db-43e6-927c-1675c78eacda",
     "cta": [],

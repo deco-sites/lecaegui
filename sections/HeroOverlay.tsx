@@ -9,7 +9,9 @@ export interface CTA {
 }
 
 export interface Props {
+  /** @format rich-text */ 
   title?: string;
+  /** @format rich-text */ 
   description?: string;
   image?: ImageWidget;
   placement?: "left" | "right" | "center";
@@ -39,7 +41,7 @@ export default function HeroFlats({
     borderRadius: overlayBorderRadius,
     opacity: overlayOpacity,
     padding: '20px',
-    maxWidth: '50%',
+    maxWidth: '60%',
   };
 
   // Adjust margin based on placement
@@ -60,13 +62,13 @@ export default function HeroFlats({
             loading="lazy"
           />
         )}
-        <div class={`flex w-full xl:mx-auto py-20 mx-5 md:mx-10 z-20 relative ${alignmentClasses} lg:py-36 gap-12 md:gap-20 items-center`}>
+        <div class={`flex w-full xl:mx-auto py-10 mx-2 md:mx-10 z-20 relative ${alignmentClasses} lg:py-36 gap-12 md:gap-20 items-center`}>
           <div class={`space-y-4 lg:w-1/2 lg:max-w-xl ${textContainerMargin}`} style={textContainerStyle}>
             <div
-              class="inline-block lg:text-[80px] text-4xl leading-none font-medium"
+              class="inline-block text-6xl leading-none"
               dangerouslySetInnerHTML={{ __html: title }}
             ></div>
-            <p class="text-lg md:text-md leading-[150%]" dangerouslySetInnerHTML={{ "__html": description }}></p>
+            <p class="text-lg leading-[150%]" dangerouslySetInnerHTML={{ "__html": description }}></p>
             <div class="flex items-center gap-3 justify-center lg:justify-start">
               {cta.map((item) => (
                 <a
