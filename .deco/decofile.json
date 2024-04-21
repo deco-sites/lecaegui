@@ -101,6 +101,9 @@
     "cta": [],
     "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
   },
+  "Preview /sections/HeroOverlay.tsx": {
+    "__resolveType": "site/sections/HeroOverlay.tsx"
+  },
   "Preview /sections/ImageWithParagraph.tsx": {
     "__resolveType": "site/sections/ImageWithParagraph.tsx"
   },
@@ -296,7 +299,7 @@
       "jsonLDs": [],
       "noIndexing": false,
       "description": "Venha comemorar nosso casamento conosco dia 3 de Maio de 2025 💙💚",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/1cedcb35-0b3f-46ca-b4f5-c1944172084a",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/7da42a8b-08b9-4bdc-85a6-8925a2029afd",
       "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/92ca1934-8f39-4826-bd2b-d8ec5738cec7",
       "titleTemplate": "Alexia e Guilherme - 3 de Maio de 2025 - Save the date",
       "descriptionTemplate": "Venha comemorar nosso casamento conosco dia 3 de Maio de 2025 💙💚"
@@ -332,9 +335,6 @@
         "includes": []
       }
     }
-  },
-  "Preview /sections/HeroOverlay.tsx": {
-    "__resolveType": "site/sections/HeroOverlay.tsx"
   },
   "text-image": {
     "__resolveType": "site/sections/ImageWithParagraph.tsx",
