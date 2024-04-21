@@ -298,7 +298,9 @@
       "noIndexing": false,
       "description": "Venha comemorar nosso casamento conosco dia 3 de Maio de 2025 💙💚",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/1cedcb35-0b3f-46ca-b4f5-c1944172084a",
-      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/92ca1934-8f39-4826-bd2b-d8ec5738cec7"
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/92ca1934-8f39-4826-bd2b-d8ec5738cec7",
+      "titleTemplate": "Alexia e Guilherme - 3 de Maio de 2025 - Save the date",
+      "descriptionTemplate": "Venha comemorar nosso casamento conosco dia 3 de Maio de 2025 💙💚"
     },
     "global": [
       {
