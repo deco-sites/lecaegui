@@ -13,6 +13,8 @@ export default defineApp(async (_req, ctx) => {
 
       {/* Include Icons and manifest */}
       <Head>
+      <meta property="og:image" content="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/7da42a8b-08b9-4bdc-85a6-8925a2029afd"/>
+
         {/* Enable View Transitions API */}
         <meta name="view-transition" content="same-origin" />
 
