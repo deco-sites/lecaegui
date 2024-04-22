@@ -41,7 +41,6 @@ export default function HeroFlats({
     borderRadius: overlayBorderRadius,
     opacity: overlayOpacity,
     padding: '20px',
-    maxWidth: '60%',
   };
 
   // Adjust margin based on placement
@@ -63,12 +62,12 @@ export default function HeroFlats({
           />
         )}
         <div class={`flex w-full xl:mx-auto py-10 mx-2 md:mx-10 z-20 relative ${alignmentClasses} lg:py-36 gap-12 md:gap-20 items-center`}>
-          <div class={`space-y-4 lg:w-1/2 lg:max-w-xl ${textContainerMargin}`} style={textContainerStyle}>
+          <div class={`space-y-4 lg:w-1/3 w-2/3  lg:max-w-xl ${textContainerMargin}`} style={textContainerStyle}>
             <div
               class="inline-block text-6xl leading-none"
               dangerouslySetInnerHTML={{ __html: title }}
             ></div>
-            <p class="text-lg leading-[150%]" dangerouslySetInnerHTML={{ "__html": description }}></p>
+            <div class="text-2xl leading-[150%]" dangerouslySetInnerHTML={{ "__html": description }}></div> 
             <div class="flex items-center gap-3 justify-center lg:justify-start">
               {cta.map((item) => (
                 <a
