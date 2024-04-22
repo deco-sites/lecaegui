@@ -269,8 +269,9 @@
     "cta": [],
     "description": "<p>03 de Maio de 2025<br>Itaipava — RJ</p>",
     "textColor": "",
-    "overlayBgColor": "000",
-    "textColorTailwind": "primary"
+    "overlayBgColor": "transparent",
+    "textColorTailwind": "primary",
+    "overlayBorderRadius": "16px"
   },
   "htmx": {
     "__resolveType": "decohub/apps/htmx.ts",
