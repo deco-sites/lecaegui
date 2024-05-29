@@ -1,1 +1,14 @@
-{"__resolveType":"site/sections/HeroOverlay.tsx","title":"<h1>Save the Date</h1>","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/e2891734-c713-44a5-b693-b52db48487bb","overlay":true,"overlayOpacity":1,"placement":"center","cta":[],"description":"<p>03 de Maio de 2025<br>Itaipava — RJ</p>","textColor":"","overlayBgColor":"transparent","textColorTailwind":"primary","overlayBorderRadius":"16px"}
+{
+  "__resolveType": "site/sections/HeroOverlay.tsx",
+  "title": "<h1>Save the Date</h1>",
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/4c7e5861-b8de-485c-9779-2c9b0e79c927",
+  "overlay": true,
+  "overlayOpacity": 1,
+  "placement": "center",
+  "cta": [],
+  "description": "<p>03 de Maio de 2025<br>Itaipava — RJ</p>",
+  "textColor": "",
+  "overlayBgColor": "transparent",
+  "textColorTailwind": "primary",
+  "overlayBorderRadius": "16px"
+}

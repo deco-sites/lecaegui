@@ -1,1 +1,41 @@
-{"seo":{"type":"website","title":"Alexia e Guilherme - 3 de Maio de 2025 - Save the date","jsonLDs":[],"noIndexing":false,"description":"Venha comemorar nosso casamento conosco dia 3 de Maio de 2025 💙💚","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/50e3cfdb-bb19-42d4-9c94-a785e398eb1b","favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/92ca1934-8f39-4826-bd2b-d8ec5738cec7","titleTemplate":"Alexia e Guilherme - 3 de Maio de 2025 - Save the date","descriptionTemplate":"Venha comemorar nosso casamento conosco dia 3 de Maio de 2025 💙💚"},"global":[{"__resolveType":"htmx/sections/htmx.tsx"}],"routes":[{"__resolveType":"website/loaders/pages.ts"},{"__resolveType":"website/loaders/redirects.ts"}],"caching":{"directives":[],"enabled":false},"__resolveType":"site/apps/site.ts","firstByteThresholdMS":false,"theme":{"__resolveType":"Groovy Vibes"},"abTesting":{"replaces":[],"includeScriptsToHead":{"includes":[]}}}
+{
+  "seo": {
+    "type": "website",
+    "title": "Alexia e Guilherme - 3 de Maio de 2025 - Save the date",
+    "jsonLDs": [],
+    "noIndexing": false,
+    "description": "Venha comemorar nosso casamento conosco dia 3 de Maio de 2025 💙💚",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/50e3cfdb-bb19-42d4-9c94-a785e398eb1b",
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/92ca1934-8f39-4826-bd2b-d8ec5738cec7",
+    "titleTemplate": "Alexia e Guilherme - 3 de Maio de 2025 - Save the date",
+    "descriptionTemplate": "Venha comemorar nosso casamento conosco dia 3 de Maio de 2025 💙💚"
+  },
+  "global": [
+    {
+      "__resolveType": "htmx/sections/htmx.tsx"
+    }
+  ],
+  "routes": [
+    {
+      "__resolveType": "website/loaders/pages.ts"
+    },
+    {
+      "__resolveType": "website/loaders/redirects.ts"
+    }
+  ],
+  "caching": {
+    "directives": [],
+    "enabled": false
+  },
+  "__resolveType": "site/apps/site.ts",
+  "firstByteThresholdMS": false,
+  "theme": {
+    "__resolveType": "Groovy Vibes"
+  },
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    }
+  }
+}
