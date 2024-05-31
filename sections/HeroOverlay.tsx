@@ -1,55 +1,26 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
-export interface CTA {
-  id?: string;
-  href: string;
-  text: string;
-  outline?: boolean;
-}
-
 export interface Props {
-  /** @format rich-text */ 
+  /** @format code */ 
   title?: string;
-  /** @format rich-text */ 
-  description?: string;
+  subtitle?: string;
+  location?: string;
+  time?: string;
   image?: ImageWidget;
-  placement?: "left" | "right" | "center";
-  cta?: CTA[];
-  textColorTailwind: string;
-  overlayBgColor?: string;
-  overlayBorderRadius?: string;
-  overlayBlur?: string;
-  overlayOpacity?: number;
 }
 
 export default function HeroFlats({
-  title = "Click here to tweak this text however you want.",
-  description = "This text is fully editable and ready for your personal touch.",
+  title = "Alexia & Guilherme",
+  subtitle = "Save the Date",
+  location = "Itaipava, RJ",
+  time = "03.05.2025",
   image = "https://placehold.co/3000x1800",
-  placement = "left",
-  cta = [],
-  textColorTailwind = "white",
-  overlayBgColor = "rgba(255, 255, 255, 0.8)",
-  overlayBorderRadius = "8px",
-  overlayBlur = "4px",
-  overlayOpacity = 0.8,
 }: Props) {
-  const textContainerStyle = {
-    backdropFilter: `blur(${overlayBlur})`,
-    backgroundColor: overlayBgColor,
-    borderRadius: overlayBorderRadius,
-    opacity: overlayOpacity,
-    padding: '20px',
-  };
-
-  // Adjust margin based on placement
-  const textContainerMargin = placement === 'left' ? 'mr-auto ml-20' : placement === 'right' ? 'ml-auto mr-20' : 'mx-auto';
-  const alignmentClasses = placement === 'center' ? 'text-center' : placement === 'left' ? 'text-left' : 'text-right';
 
   return (
     <nav class="lg:mx-auto">
-      <div class={`flex flex-col items-center gap-8 relative text-${textColorTailwind}`}>
+      <div class={`flex flex-col items-center gap-8 relative text-secondary`}>
         {image && (
           <Image
             width={640}
@@ -61,26 +32,18 @@ export default function HeroFlats({
             loading="lazy"
           />
         )}
-        <div class={`flex w-full xl:mx-auto py-10 mx-2 md:mx-10 z-20 relative ${alignmentClasses} lg:py-36 gap-12 md:gap-20 items-center`}>
-          <div class={`space-y-4 lg:w-1/3 w-2/3  lg:max-w-xl ${textContainerMargin}`} style={textContainerStyle}>
+        <div class={`flex w-full xl:mx-auto py-10 mx-2 md:mx-10 z-20 relative text-center lg:py-36 gap-12 md:gap-20 items-center`}>
+          <div class={`space-y-4 lg:w-1/3 w-2/3  lg:max-w-xl mx-auto`}>
+            <div
+              class="inline-block text-2xl leading-none"
+              dangerouslySetInnerHTML={{ __html: subtitle }}
+            ></div>
             <div
               class="inline-block text-6xl leading-none"
               dangerouslySetInnerHTML={{ __html: title }}
             ></div>
-            <div class="text-2xl leading-[150%]" dangerouslySetInnerHTML={{ "__html": description }}></div> 
-            <div class="flex items-center gap-3 justify-center lg:justify-start">
-              {cta.map((item) => (
-                <a
-                  key={item.id}
-                  id={item.id}
-                  href={item.href}
-                  target={item.href.startsWith("http") ? "_blank" : "_self"}
-                  class={`font-normal btn btn-primary ${item.outline ? "btn-outline" : ""}`}
-                >
-                  {item.text}
-                </a>
-              ))}
-            </div>
+            <div class="text-2xl leading-[150%]" dangerouslySetInnerHTML={{ "__html": location }}></div> 
+            <div class="text-2xl leading-[150%]" dangerouslySetInnerHTML={{ "__html": time }}></div> 
           </div>
         </div>
       </div>

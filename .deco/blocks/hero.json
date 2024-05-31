@@ -1,6 +1,6 @@
 {
   "__resolveType": "site/sections/HeroOverlay.tsx",
-  "title": "<h1>Save the Date</h1>",
+  "title": "Alexia & Guilherme",
   "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/4c7e5861-b8de-485c-9779-2c9b0e79c927",
   "overlay": true,
   "overlayOpacity": 1,
@@ -10,5 +10,7 @@
   "textColor": "",
   "overlayBgColor": "transparent",
   "textColorTailwind": "primary",
-  "overlayBorderRadius": "16px"
+  "overlayBorderRadius": "16px",
+  "subtitle": "Save the Date",
+  "location": "Itaipava, RJ"
 }
