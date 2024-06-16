@@ -19,8 +19,8 @@ export default function HeroFlats({
 }: Props) {
 
   return (
-    <nav class="lg:mx-auto">
-      <div class={`flex flex-col items-center gap-8 relative text-secondary`}>
+    <nav class="lg:mx-auto flex flex-row justify-center">
+      <div class={`flex flex-col items-center gap-8 relative text-secondary w-full max-w-[1440px]`}>
         {image && (
           <Image
             width={640}
@@ -32,21 +32,23 @@ export default function HeroFlats({
             loading="lazy"
           />
         )}
-        <div class={`flex w-full xl:mx-auto py-10 mx-2 md:mx-10 z-20 relative text-center lg:py-36 gap-12 md:gap-20 items-center`}>
-          <div class={`space-y-4 w-2/3  lg:max-w-xl mx-auto`}>
+        <div class={`flex w-full xl:mx-auto pb-24 pt-6 mx-2 md:mx-10 z-20 relative text-center lg:pb-40 lg:pt-12 gap-12 md:gap-20 items-center`}>
+          <div class={`space-y-4 lg:max-w-xl mx-auto`}>
             <div
-              class="block text-2xl leading-none uppercase"
+              class="block text-sm lg:text-2xl leading-none uppercase"
               dangerouslySetInnerHTML={{ __html: subtitle }}
             ></div>
             <div
-              class="block text-8xl leading-none"
+              class="block text-6xl lg:text-8xl leading-none"
               style="font-family: Mr De Haviland"
               dangerouslySetInnerHTML={{ __html: title }}
             ></div>
-            <div class="text-2xl leading-[150%]" 
-              dangerouslySetInnerHTML={{ "__html": location }}></div> 
-            <div class="text-4xl leading-[150%]" style="font-family: Lateef; font-weight: 100" 
-              dangerouslySetInnerHTML={{ "__html": time }}></div> 
+            <div class="hidden lg:block">
+              <div class="text-md lg:text-2xl leading-[150%]" 
+                dangerouslySetInnerHTML={{ "__html": location }}></div> 
+              <div class="text-xl lg:text-4xl leading-[150%]" style="font-family: Lateef; font-weight: 100" 
+                dangerouslySetInnerHTML={{ "__html": time }}></div> 
+            </div>
           </div>
         </div>
       </div>
