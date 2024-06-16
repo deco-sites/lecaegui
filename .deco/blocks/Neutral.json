@@ -31,6 +31,18 @@
       {
         "variations": [],
         "family": "Albert Sans"
+      },
+      {
+        "variations": [],
+        "family": "Mr De Haviland"
+      },
+      {
+        "variations": [
+          {
+            "weight": "100"
+          }
+        ],
+        "family": "Lateef"
       }
     ]
   }

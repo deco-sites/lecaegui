@@ -33,17 +33,20 @@ export default function HeroFlats({
           />
         )}
         <div class={`flex w-full xl:mx-auto py-10 mx-2 md:mx-10 z-20 relative text-center lg:py-36 gap-12 md:gap-20 items-center`}>
-          <div class={`space-y-4 lg:w-1/3 w-2/3  lg:max-w-xl mx-auto`}>
+          <div class={`space-y-4 w-2/3  lg:max-w-xl mx-auto`}>
             <div
-              class="inline-block text-2xl leading-none"
+              class="block text-2xl leading-none uppercase"
               dangerouslySetInnerHTML={{ __html: subtitle }}
             ></div>
             <div
-              class="inline-block text-6xl leading-none"
+              class="block text-8xl leading-none"
+              style="font-family: Mr De Haviland"
               dangerouslySetInnerHTML={{ __html: title }}
             ></div>
-            <div class="text-2xl leading-[150%]" dangerouslySetInnerHTML={{ "__html": location }}></div> 
-            <div class="text-2xl leading-[150%]" dangerouslySetInnerHTML={{ "__html": time }}></div> 
+            <div class="text-2xl leading-[150%]" 
+              dangerouslySetInnerHTML={{ "__html": location }}></div> 
+            <div class="text-4xl leading-[150%]" style="font-family: Lateef; font-weight: 100" 
+              dangerouslySetInnerHTML={{ "__html": time }}></div> 
           </div>
         </div>
       </div>
