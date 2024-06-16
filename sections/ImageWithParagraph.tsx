@@ -48,9 +48,9 @@ export default function ImageWithParagraph({
       <div
         class={`flex ${
           PLACEMENT[placement]
-        } gap-12 md:gap-20 text-left items-center z-10 ${
-          disableSpacing?.top ? "" : "pt-12 lg:pt-28"
-        } ${disableSpacing?.bottom ? "" : "pb-12 lg:pb-28"}`}
+        } gap-12 md:gap-20 text-left items-center mx-2 md:mx-6 z-10 ${
+          disableSpacing?.top ? "" : "pt-8 lg:pt-20"
+        } ${disableSpacing?.bottom ? "" : "pb-8 lg:pb-20"}`}
       >
         <div class="w-full md:w-1/2 border border-secondary rounded-lg overflow-hidden">
           <Image
