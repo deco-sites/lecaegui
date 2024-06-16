@@ -10,10 +10,6 @@
     },
     {
       "__resolveType": "text-image"
-    },
-    {
-      "__resolveType": "site/sections/GuestsAutocomplete.tsx",
-      "mode": "search"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
