@@ -68,10 +68,10 @@ export default function ImageWithParagraph({
           <p class="text-md font-semibold">
             {tagline}
           </p>
-          <p class="text-4xl leading-snug">
+          <p class="text-3xl lg:text-4xl font-bold leading-snug">
             {title}
           </p>
-          <p class="leading-normal text-xl ">
+          <p class="leading-normal text-md lg:text-xl ">
             {description}
           </p>
           <div class="flex gap-3 pt-4">

@@ -1,1 +1,9 @@
-{"__resolveType":"site/sections/ImageWithParagraph.tsx","title":"Casamento Alexia e Guilherme","description":"Vamos curtir um fim de semana animado na serra do Rio. Vamos ter um esquenta na sexta e a cerimônia e festa no sábado, dia 3. Reserve a sua agenda, compre as suas passagens e em breve voltamos com mais informações!","placement":"left","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/b4777a5e-f9db-43e6-927c-1675c78eacda","cta":[],"tagline":"1 a 3 de Maio de 2025 - Itaipava - Rio de Janeiro"}
+{
+  "__resolveType": "site/sections/ImageWithParagraph.tsx",
+  "title": "Itaipava - Rio de Janeiro",
+  "description": "Vamos curtir um fim de semana animado na serra do Rio. Começa com um esquenta na sexta, dia 2. A cerimônia e festa são no sábado, dia 3. Reserve a sua agenda, compre as suas passagens e conte os dias conosco! 😄",
+  "placement": "left",
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/b4777a5e-f9db-43e6-927c-1675c78eacda",
+  "cta": [],
+  "tagline": "1 a 3 de Maio de 2025"
+}
