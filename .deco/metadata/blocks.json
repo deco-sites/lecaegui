@@ -67,29 +67,13 @@
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
   },
-  "/.deco/blocks/app-decohub%252Fapps%252Fhtmx.ts.json": {
-    "blockType": "apps",
-    "__resolveType": "decohub/apps/htmx.ts"
-  },
-  "/.deco/blocks/app-site%252Fapps%252Fdecohub.ts.json": {
-    "blockType": "apps",
-    "__resolveType": "site/apps/decohub.ts"
-  },
   "/.deco/blocks/app-site%252Fapps%252Fsite.ts.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/site.ts"
   },
-  "/.deco/blocks/blog.json": {
-    "blockType": "apps",
-    "__resolveType": "decohub/apps/blog.ts"
-  },
   "/.deco/blocks/hero.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/HeroOverlay.tsx"
-  },
-  "/.deco/blocks/htmx.json": {
-    "blockType": "apps",
-    "__resolveType": "decohub/apps/htmx.ts"
   },
   "/.deco/blocks/pages-testing-a5c1b57018a9.json": {
     "name": "Home",
@@ -109,8 +93,12 @@
     "blockType": "sections",
     "__resolveType": "site/sections/ImageWithParagraph.tsx"
   },
-  "/.deco/blocks/decohub.json": {
+  "/.deco/blocks/deco-htmx.json": {
     "blockType": "apps",
-    "__resolveType": "site/apps/decohub.ts"
+    "__resolveType": "site/apps/deco/htmx.ts"
+  },
+  "/.deco/blocks/deco-blog.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/deco/blog.ts"
   }
 }
