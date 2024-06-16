@@ -1,0 +1,9 @@
+{
+  "__resolveType": "site/apps/deco/records.ts",
+  "url": "libsql://lecaegui-decocx.turso.io",
+  "authToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "name": "DATABASE_AUTH_TOKEN",
+    "encrypted": "375595efdd621f59f12f3fa5579fefda92f8f598018ed9b257abd62e5b8f05beec1aad6ae27eddde46ffc54e999cde3d10368fbaed9bfced095ea97095526dcef7276443bfe1eba64ff39d73575f990628f5e2c0dbefe3cfb4e9c13b71b4ae680a513b0cb5c67d8247316f3c61adb79b922147b9e346d9513fb473ceaa728437fda28e6dc826da2681bb695eb66bcf6bce9e1f21b1623cdee80c0e0d263797adecca6126571a9132d466323c859ccd30e52e980175d9e39608eb04f6dab3c6bf6b5b58508121e8f97a4797ae6ec3dc204dec83b28f620912db5349f99b61149e"
+  }
+}
