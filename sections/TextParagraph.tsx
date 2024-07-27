@@ -38,11 +38,11 @@ export default function TextParagraph({
         <div class={`w-full max-w-xl gap-4 z-10 ${PLACEMENT[textPlacement]
           }`}>
           <p    
-            class="text-3xl lg:text-[26px] leading-normal"
-            style="font-family: Playfair Display;">
+            class="text-3xl lg:text-5xl !leading-normal"
+            style="font-family: Lateef;">
             {title}
           </p>
-          <div class="text-md lg:text-lg leading-[171.3%] mt-6"
+          <div class="text-md lg:text-lg leading-[171.3%] mt-4"
             dangerouslySetInnerHTML={{ "__html": description }}
             style="font-family: Lato;">
           </div>
