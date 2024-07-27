@@ -43,7 +43,64 @@
           }
         ],
         "family": "Lateef"
+      },
+      {
+        "variations": [
+          {
+            "weight": "400"
+          },
+          {
+            "weight": "500"
+          },
+          {
+            "weight": "700"
+          }
+        ],
+        "family": "Helvetica Neue"
+      },
+      {
+        "variations": [
+          {
+            "weight": "400"
+          },
+          {
+            "weight": "500"
+          },
+          {
+            "weight": "700"
+          }
+        ],
+        "family": "Qwigley"
+      },
+      {
+        "variations": [
+          {
+            "weight": "400"
+          },
+          {
+            "weight": "500"
+          },
+          {
+            "weight": "700"
+          }
+        ],
+        "family": "Lato"
+      },
+      {
+        "variations": [
+          {
+            "weight": "400"
+          },
+          {
+            "weight": "500"
+          },
+          {
+            "weight": "700"
+          }
+        ],
+        "family": "Playfair Display"
       }
     ]
-  }
+  },
+  "mode": "light"
 }

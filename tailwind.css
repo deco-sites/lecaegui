@@ -20,6 +20,11 @@
     -moz-appearance: textfield;
     appearance: textfield;
   }
+
+  .helvetica {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+      Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
 }
 
 @layer components {
