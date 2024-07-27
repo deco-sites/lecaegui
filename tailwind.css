@@ -55,3 +55,10 @@
     display: none;
   }
 }
+
+@font-face {
+  font-family: 'jsMath-cmr10 cmr10';
+  font-style: normal;
+  font-weight: 500;
+  src: local('jsMath-cmr10 cmr10'), url('jsMath-cmr10.woff') format('woff');
+}
