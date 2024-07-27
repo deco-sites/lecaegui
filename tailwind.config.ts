@@ -9,11 +9,16 @@ export default {
     extend: {
       animation: {
         sliding: "sliding 30s linear infinite",
+        fadeIn: 'fadeIn 1.5s ease-in-out forwards',
       },
       keyframes: {
         sliding: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
+        },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
         },
       },
     },

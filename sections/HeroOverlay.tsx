@@ -14,17 +14,19 @@ export default function HeroFlats({
   title = "Alexia & Guilherme",
   subtitle = "Save the Date",
   location = "Itaipava, RJ",
-  time = "03.05.2025",
+  time = "03 de Maio, 2025",
   image = "https://placehold.co/3000x1800",
 }: Props) {
 
   return (
-    <nav class="lg:mx-auto flex flex-row justify-center">
-      <div class={`flex flex-col items-center gap-8 relative text-secondary w-full max-w-[1440px]`}>
+    <nav class="flex flex-row justify-center">
+      <div class={`flex flex-col items-center gap-8 relative text-secondary w-full max-w-[1280px] lg:mx-auto h-[calc((832/1280)*100vw)] xl:h-[832px]`}>
         {image && (
           <Image
             width={640}
-            class="w-full lg:w-full object-cover absolute top-0 left-0 h-full z-0"
+            height={416}
+            class="w-full object-cover absolute top-0 left-0 z-0"
+            style={{ aspectRatio: '640 / 416' }}
             sizes="(max-width: 640px) 100vw, 100vw"
             src={image}
             alt={image}
@@ -32,21 +34,21 @@ export default function HeroFlats({
             loading="lazy"
           />
         )}
-        <div class={`flex w-full xl:mx-auto pb-24 pt-6 mx-2 md:mx-10 z-20 relative text-center lg:pb-40 lg:pt-12 gap-12 md:gap-20 items-center`}>
-          <div class={`space-y-4 lg:max-w-xl mx-auto`}>
+        <div class={`flex w-full pb-24 pt-6 mx-2 md:mx-10 z-20 relative text-center lg:pb-40 lg:pt-16 gap-12 md:gap-20 items-center`}>
+          <div class={`space-y-4 lg:max-w-2xl mx-auto animate-fadeIn`}>
             <div
-              class="block text-sm lg:text-2xl leading-none uppercase"
+              class="block text-sm lg:text-2xl leading-normal uppercase helvetica tracking-[8px]"
               dangerouslySetInnerHTML={{ __html: subtitle }}
             ></div>
             <div
-              class="block text-6xl lg:text-8xl leading-none"
-              style="font-family: Mr De Haviland"
+              class="block text-6xl lg:text-9xl" 
+              style="font-family: Qwigley"
               dangerouslySetInnerHTML={{ __html: title }}
             ></div>
-            <div class="hidden lg:block">
-              <div class="text-md lg:text-2xl leading-[150%]" 
+            <div class="hidden md:block">
+              <div class="text-md lg:text-2xl leading-normal" 
                 dangerouslySetInnerHTML={{ "__html": location }}></div> 
-              <div class="text-xl lg:text-4xl leading-[150%]" style="font-family: Lateef; font-weight: 100" 
+              <div class="text-xl lg:text-3xl leading-normal tracking-[8px]" style="font-family: Lato; font-weight: 500" 
                 dangerouslySetInnerHTML={{ "__html": time }}></div> 
             </div>
           </div>
