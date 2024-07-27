@@ -13,4 +13,5 @@ export const guests = sqliteTable("guests", {
   confirmationDate: integer("confirmationDate", {mode: "timestamp"}),
   plusOne: integer("plusOne", {mode: "boolean"}),
   plusOneName: text("plusOneName"),
+  role: text("role"),
 });
