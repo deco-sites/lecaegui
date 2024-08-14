@@ -1,15 +1,9 @@
 {
-  "name": "Home",
-  "path": "/",
+  "name": "Search Guest",
+  "path": "/search",
   "sections": [
     {
       "__resolveType": "website/sections/Seo/SeoV2.tsx"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/GuestsAutocomplete.tsx"
-      }
     },
     {
       "__resolveType": "site/sections/HeroOverlay.tsx",
@@ -47,7 +41,17 @@
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/f8b9cb28-395e-4fca-b4d7-465e8cecd34b"
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/GuestsAutocomplete.tsx",
+        "mode": "search"
+      }
     }
   ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
   "__resolveType": "website/pages/Page.tsx"
 }
