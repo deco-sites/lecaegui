@@ -12,7 +12,7 @@ const script = (formId: string, name: string) => {
   input?.addEventListener("input", (e) => {
     e.preventDefault();
     const search_term = input?.value;
-    console.log("search_term111", search_term);
+    console.log("search_term111", search_term); 
 
     if (search_term) {
       console.log("search_term22", search_term);
