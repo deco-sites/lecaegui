@@ -3,12 +3,16 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $api_populate from "./routes/api/populate.ts";
+import * as $api_search from "./routes/api/search.ts";
 
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
+    "./routes/api/populate.ts": $api_populate,
+    "./routes/api/search.ts": $api_search,
   },
   islands: {},
   baseUrl: import.meta.url,
