@@ -6,12 +6,6 @@
       "__resolveType": "website/sections/Seo/SeoV2.tsx"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/GuestsAutocomplete.tsx"
-      }
-    },
-    {
       "__resolveType": "site/sections/HeroOverlay.tsx",
       "title": "Alexia & Guilherme",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/4c7e5861-b8de-485c-9779-2c9b0e79c927",

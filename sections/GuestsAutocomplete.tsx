@@ -1,10 +1,9 @@
-import { eq, ilike, like } from "drizzle-orm";
+import { useScript } from "deco/hooks/useScript.ts";
+import { useSection } from "deco/hooks/useSection.ts";
 import { SectionProps } from "deco/types.ts";
+import { eq, like } from "drizzle-orm";
 import type { AppContext, RecordsApp } from "site/apps/deco/records.ts";
 import { guests } from "site/db/schema.ts";
-import { useSection } from "deco/hooks/useSection.ts";
-import { useScript } from "deco/hooks/useScript.ts";
-import { search } from "https://deno.land/x/inspect_vscode@0.2.1/search.ts";
 import { useComponent } from "site/sections/Component.tsx";
 
 const script = (formId: string, name: string) => {
@@ -12,7 +11,7 @@ const script = (formId: string, name: string) => {
   input?.addEventListener("input", (e) => {
     e.preventDefault();
     const search_term = input?.value;
-    console.log("search_term111", search_term); 
+    console.log("search_term111", search_term);
 
     if (search_term) {
       console.log("search_term22", search_term);
@@ -120,6 +119,10 @@ export async function action(
     };
   }
 }
+
+export const LoadingFallback = () => {
+  return <span>Loading...</span>;
+};
 
 export default function GuestsAutocomplete(props: SectionProps<typeof loader>) {
   const searchUrl = useSection<Props>({
