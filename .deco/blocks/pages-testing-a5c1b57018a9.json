@@ -22,6 +22,12 @@
       "location": "Itaipava, RJ"
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/GuestSearchSection.tsx"
+      }
+    },
+    {
       "__resolveType": "site/sections/TextParagraph.tsx",
       "title": "Sobre o casamento"
     },
