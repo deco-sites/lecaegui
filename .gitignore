@@ -76,7 +76,11 @@ _fresh/
 
 
 # Deco files
-
 _docker_deps.ts
-.metadata/changeset.json
-sqlite.db
+.metadata/*
+.deco/metadata/*
+
+.env
+
+# Deno files
+deno.*.tmp
