@@ -1,8 +1,8 @@
 {
   "imports": {
     "site/": "./",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.95.2/",
-    "apps/": "../apps/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.95.3/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.56.13/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "preact": "npm:preact@10.23.1",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
