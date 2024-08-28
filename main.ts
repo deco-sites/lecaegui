@@ -1,10 +1,16 @@
-/// <reference no-default-lib="true"/>
-/// <reference lib="dom" />
-/// <reference lib="deno.ns" />
-/// <reference lib="esnext" />
+import { Deco } from "deco/mod.ts";
 
-import { start } from "$fresh/server.ts";
-import config from "./fresh.config.ts";
-import manifest from "./fresh.gen.ts";
+import "deco/runtime/htmx/FreshHeadCompat.ts";
+import { bindings as HTMX } from "deco/runtime/htmx/mod.ts";
+import { Layout } from "./_app.tsx";
+import manifest, { Manifest } from "./manifest.gen.ts";
 
-await start(manifest, config);
+const deco = await Deco.init<Manifest>({
+    manifest,
+    bindings: HTMX({
+        Layout,
+    }),
+});
+
+const envPort = Deno.env.get("PORT");
+Deno.serve({ handler: deco.fetch.bind(deco), port: envPort ? +envPort : 8000 });
