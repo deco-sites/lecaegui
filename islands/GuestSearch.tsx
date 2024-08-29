@@ -121,7 +121,6 @@ export default function GuestSelector(props: Prop): h.JSX.Element {
 //               hx-get="/api/guests"
 //               hx-trigger="keyup changed delay:500ms"
 //               hx-target="#guest-list"
-//               hx-params="this.value"
 //             />
 //             <ul id="guest-list" class="mt-2">
               
