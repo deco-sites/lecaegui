@@ -38,7 +38,9 @@
     "simple-git": "npm:simple-git@^3.25.0",
     "drizzle-orm": "https://esm.sh/drizzle-orm@0.30.10",
     "drizzle-orm/": "https://esm.sh/drizzle-orm@0.30.10/",
-    "drizzle-kit": "https://esm.sh/drizzle-kit@0.21.2"
+    "drizzle-kit": "https://esm.sh/drizzle-kit@0.21.2",
+    "google-auth-library" : "npm:google-auth-library@^9.14.1",
+    "google-spreadsheet":"npm:google-spreadsheet@^4.1.4"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
