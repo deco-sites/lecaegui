@@ -17,7 +17,11 @@ export interface Guest {
 }
 
 export interface GuestList {
-    data : Guest[]
+    data : string[]
+}
+
+export interface Props {
+    chrt : string
 }
 
 const SCOPES = [
@@ -33,7 +37,7 @@ const jwt = new JWT({
 
 const doc = new GoogleSpreadsheet('1_nIZM0ZGiw_zoEE6CLBamVZevr6NMTZkronP7mj1O7I', jwt);
 
-export default async function guests(): Promise<GuestList> {
+export default async function guests(props : Props): Promise<GuestList> {
 
     await doc.loadInfo()
     const sheet = doc.sheetsByIndex[0]
@@ -43,9 +47,5 @@ export default async function guests(): Promise<GuestList> {
     .filter(row => !row.get('É +1?'))
     .map(row => row.get('Nome'));
 
-    console.log(filteredNames)
-
-    const guests = filteredNames
-
-    return {data: guests};
+    return {data: filteredNames};
 }

@@ -1,4 +1,4 @@
-import { asset, Head } from "deco/runtime/htmx/mod.ts";
+import { asset, Head } from "@deco/deco/htmx";
 import { ComponentChildren } from "preact";
 
 export const Layout = (

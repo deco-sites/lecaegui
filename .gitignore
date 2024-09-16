@@ -84,3 +84,6 @@ _docker_deps.ts
 
 # Deno files
 deno.*.tmp
+
+# google files
+static/lecaegui-ebd973469e8e.json
