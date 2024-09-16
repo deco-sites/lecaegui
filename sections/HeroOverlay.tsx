@@ -45,8 +45,8 @@ export default function HeroFlats({
             >
             </div>
             <div
-              class="block text-6xl lg:text-9xl"
-              style="font-family: Qwigley"
+              class="block text-5xl lg:text-8xl"
+              style="font-family: Mr De Haviland"
               dangerouslySetInnerHTML={{ __html: title }}
             >
             </div>
