@@ -12,7 +12,7 @@ export interface Props {
 
 export default function HeroFlats({
   title = "Alexia & Guilherme",
-  subtitle = "Save the Date",
+  subtitle = "",
   location = "Itaipava, RJ",
   time = "03 de Maio, 2025",
   image = "https://placehold.co/3000x1800",

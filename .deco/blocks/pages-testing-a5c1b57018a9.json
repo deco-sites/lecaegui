@@ -6,8 +6,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Header.tsx",
-        "text": "Alexia & Guilherme",
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/30c494a4-e6a9-4bfc-875e-6174e76f5f14/a-cute-capybara-logo"
+        "text": "SAVE THE DATE"
       }
     },
     {
@@ -26,7 +25,6 @@
       "overlayBgColor": "transparent",
       "textColorTailwind": "primary",
       "overlayBorderRadius": "16px",
-      "subtitle": "Save the Date",
       "location": "Itaipava, RJ"
     },
     {
