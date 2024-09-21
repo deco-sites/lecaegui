@@ -7,6 +7,8 @@ import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/deco/records.ts";
 import * as $$$$$$$$$$$3 from "./apps/site.ts";
 import * as $$$0 from "./loaders/guests.ts";
+import * as $$$1 from "./loaders/plusOneGuest.ts";
+import * as $$$2 from "./loaders/postsIds.ts";
 import * as $$$$$$0 from "./sections/BlogPosts.tsx";
 import * as $$$$$$1 from "./sections/Component.tsx";
 import * as $$$$$$2 from "./sections/DynamicSearchBox.tsx";
@@ -32,6 +34,8 @@ import * as $$$$$$17 from "./sections/Theme/Theme.tsx";
 const manifest = {
   "loaders": {
     "site/loaders/guests.ts": $$$0,
+    "site/loaders/plusOneGuest.ts": $$$1,
+    "site/loaders/postsIds.ts": $$$2,
   },
   "sections": {
     "site/sections/BlogPosts.tsx": $$$$$$0,

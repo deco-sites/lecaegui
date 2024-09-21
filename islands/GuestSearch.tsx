@@ -1,10 +1,18 @@
 import { GuestList } from "site/loaders/guests.ts";
+import { useState, useEffect } from "preact/hooks";
+import { PostsIds } from "site/loaders/postsIds.ts";
 
 export interface Props {
   guests?: GuestList
+  postsIds?: PostsIds
 }
 
-export default function GuestSearch({guests} : Props) {
+export default function GuestSearch({guests, postsIds} : Props) {
+
+  useEffect(() => {
+    console.log(guests)
+    console.log(postsIds)
+  }, [])
 
   return (
     <div class="flex justify-center flex-col items-center helvetica mt-14">

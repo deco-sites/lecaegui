@@ -38,14 +38,17 @@ const jwt = new JWT({
 const doc = new GoogleSpreadsheet('1_nIZM0ZGiw_zoEE6CLBamVZevr6NMTZkronP7mj1O7I', jwt);
 
 export default async function guests(props : Props): Promise<GuestList> {
-
-    await doc.loadInfo()
-    const sheet = doc.sheetsByIndex[0]
-    const rows = await sheet.getRows()
+    
+    await doc.loadInfo();
+    const sheet = doc.sheetsByIndex[0];
+    const rows = await sheet.getRows();
 
     const filteredNames = rows
-    .filter(row => !row.get('É +1?'))
-    .map(row => row.get('Nome'));
+        .filter(row => row.get('É +1?') !== 'Sim')
+        .map(row => row.get('Nome'))
+        .filter(name => name); 
 
-    return {data: filteredNames};
+    console.log("Filtered names:", filteredNames); 
+
+    return { data: filteredNames };
 }
