@@ -52,6 +52,28 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Faq.tsx",
+        "title": "Mais informações",
+        "description": "Descubra detalhes sobre o nosso casamento",
+        "questions": [
+          {
+            "title": "Qual data será o casamento?",
+            "answer": "<p>Sábado, dia 3 de Maio de 2025! O dia 1 de Maio é feriado no Brasil.</p>"
+          },
+          {
+            "title": "Onde vai ser o casamento?",
+            "answer": "<p>Em Itaipava, na região serrana do Rio. Especificamente, no Haras Pedra do Elefante.</p>"
+          },
+          {
+            "title": "Devo levar meu companheiro/a?",
+            "answer": "<p>Claro! Por favor, informe o nome do seu +1 no RSVP.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Footer.tsx"
       }
     }

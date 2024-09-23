@@ -28,7 +28,7 @@ export default function BlogPosts({
   title = "FAQs",
   description =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  cta = { id: "change-me", href: "/", text: "Change me", outline: true },
+  cta = null,
   questions = [
     {
       title: "Question #1 text goes here",
@@ -67,17 +67,17 @@ export default function BlogPosts({
           <p class="text-lg">
             {description}
           </p>
-          <a
-            key={cta?.id}
-            id={cta?.id}
-            href={cta?.href}
-            target={cta?.href.includes("http") ? "_blank" : "_self"}
-            class={`font-normal btn btn-primary ${
-              cta.outline && "btn-outline"
-            }`}
-          >
-            {cta?.text}
-          </a>
+          {cta && (<a
+              key={cta?.id}
+              id={cta?.id}
+              href={cta?.href}
+              target={cta?.href.includes("http") ? "_blank" : "_self"}
+              class={`font-normal btn btn-primary ${cta.outline && "btn-outline"
+                }`}
+            >
+              {cta?.text}
+            </a>)
+          }
         </div>
         <div class="flex-auto border-primary border-t">
           {questions?.map((question) => (
