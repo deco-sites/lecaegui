@@ -13,20 +13,13 @@
       "__resolveType": "website/sections/Seo/SeoV2.tsx"
     },
     {
-      "__resolveType": "site/sections/HeroOverlay.tsx",
-      "title": "Alexia & Guilherme",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/4c7e5861-b8de-485c-9779-2c9b0e79c927",
-      "overlay": true,
-      "overlayOpacity": 1,
-      "placement": "center",
-      "cta": [],
-      "description": "<p>03 de Maio de 2025<br>Itaipava — RJ</p>",
-      "textColor": "",
-      "overlayBgColor": "transparent",
-      "textColorTailwind": "primary",
-      "overlayBorderRadius": "16px",
-      "subtitle": "Save the Date",
-      "location": "Itaipava, RJ"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/HeroSided.tsx",
+        "title": "Alexia & Guilherme",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/7820/4c7e5861-b8de-485c-9779-2c9b0e79c927",
+        "subtitle": "Save the date"
+      }
     },
     {
       "__resolveType": "site/sections/TextParagraph.tsx",
