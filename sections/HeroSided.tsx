@@ -14,7 +14,7 @@ export default function HeroFlats({
   image = "https://placehold.co/3000x1800",
 }: Props) {
   return (
-    <nav class="flex flex-row justify-center">
+    <nav id="herosided" class="flex flex-row justify-center">
       <div
         class="flex flex-row items-center justify-between relative w-full max-w-[1280px] lg:mx-auto h-[calc((832/1280)*100vw)] xl:h-[832px]"
       >

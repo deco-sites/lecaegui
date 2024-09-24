@@ -27,7 +27,7 @@ export default function PhotoGrid(props: Props) {
   } = props;
 
   return (
-    <section class="w-full px-4 lg:px-8 py-12 max-w-[1280px] mx-auto">
+    <section id="photogrid" class="w-full px-4 lg:px-8 py-12 max-w-[1280px] mx-auto">
       <div
         class={`grid sm:grid-cols-3 gap-4 xl:gap-8`}
       >
