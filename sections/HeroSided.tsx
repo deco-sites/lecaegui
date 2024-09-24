@@ -16,7 +16,7 @@ export default function HeroFlats({
   return (
     <nav id="herosided" class="flex flex-row justify-center">
       <div
-        class="flex flex-row items-center justify-between relative w-full max-w-[1280px] lg:mx-auto h-[calc((832/1280)*100vw)] xl:h-[832px]"
+        class="flex flex-row items-center justify-between relative w-full max-w-7xl lg:mx-auto h-[calc((832/1280)*100vw)] xl:h-[832px]"
       >
         <div class="flex flex-col items-start w-1/2 z-20 p-8 space-y-6">
           <div class="space-y-4 lg:max-w-2xl animate-fadeIn">
