@@ -1,11 +1,13 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import guests, { GuestList } from "site/loaders/guests.ts";
 
 export interface Props {
   /** @format code */
   title?: string;
   subtitle?: string;
   image?: ImageWidget;
+  guests?: GuestList;
 }
 
 export default function HeroFlats({
@@ -13,6 +15,9 @@ export default function HeroFlats({
   subtitle = "Save the Date",
   image = "https://placehold.co/3000x1800",
 }: Props) {
+  
+  console.log(guests)
+
   return (
     <nav id="herosided" class="flex flex-row justify-center">
       <div

@@ -21,7 +21,7 @@ export interface GuestList {
 }
 
 export interface Props {
-    chrt : string
+    chrt? : string
 }
 
 const SCOPES = [

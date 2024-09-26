@@ -8,8 +8,8 @@ export default function GuestSearch(props : Props) {
 
   const { guests } = props
 
-  console.log(guests)
- 
+  console.log(guests?.data)
+
   return (
     <div class="flex justify-center flex-col items-center helvetica mt-14">
           <p class="mb-6">Digite o nome do convidado</p>
