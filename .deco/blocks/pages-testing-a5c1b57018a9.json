@@ -30,7 +30,14 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/GuestSearchSection.tsx"
+        "__resolveType": "site/sections/GuestSearchSection.tsx",
+        "guests": {
+          "__resolveType": "site/loaders/guests.ts",
+          "chrt": "sas"
+        },
+        "postsIds": {
+          "__resolveType": "site/loaders/postsIds.ts"
+        }
       }
     },
     {
