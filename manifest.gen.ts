@@ -6,51 +6,57 @@ import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/deco/records.ts";
 import * as $$$$$$$$$$$3 from "./apps/site.ts";
+import * as $$$0 from "./loaders/guests.ts";
 import * as $$$$$$0 from "./sections/BlogPosts.tsx";
 import * as $$$$$$1 from "./sections/Component.tsx";
 import * as $$$$$$2 from "./sections/DynamicSearchBox.tsx";
 import * as $$$$$$3 from "./sections/Faq.tsx";
 import * as $$$$$$4 from "./sections/Footer.tsx";
-import * as $$$$$$5 from "./sections/GuestsAdmin.tsx";
-import * as $$$$$$6 from "./sections/GuestsAutocomplete.tsx";
-import * as $$$$$$7 from "./sections/Header.tsx";
-import * as $$$$$$18 from "./sections/hero-1.tsx";
-import * as $$$$$$19 from "./sections/hero-2.tsx";
-import * as $$$$$$8 from "./sections/Hero.tsx";
-import * as $$$$$$20 from "./sections/hero2.tsx";
-import * as $$$$$$9 from "./sections/HeroOverlay.tsx";
-import * as $$$$$$10 from "./sections/HeroSided.tsx";
-import * as $$$$$$11 from "./sections/ImageWithParagraph.tsx";
-import * as $$$$$$12 from "./sections/Logos.tsx";
-import * as $$$$$$13 from "./sections/PhotoGrid.tsx";
-import * as $$$$$$14 from "./sections/SimpleParagraph.tsx";
-import * as $$$$$$15 from "./sections/Testimonials.tsx";
-import * as $$$$$$16 from "./sections/TextParagraph.tsx";
-import * as $$$$$$17 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$6 from "./sections/GuestsAdmin.tsx";
+import * as $$$$$$7 from "./sections/GuestsAutocomplete.tsx";
+import * as $$$$$$5 from "./sections/GuestSearchSection.tsx";
+import * as $$$$$$8 from "./sections/Header.tsx";
+import * as $$$$$$19 from "./sections/hero-1.tsx";
+import * as $$$$$$20 from "./sections/hero-2.tsx";
+import * as $$$$$$9 from "./sections/Hero.tsx";
+import * as $$$$$$21 from "./sections/hero2.tsx";
+import * as $$$$$$10 from "./sections/HeroOverlay.tsx";
+import * as $$$$$$11 from "./sections/HeroSided.tsx";
+import * as $$$$$$12 from "./sections/ImageWithParagraph.tsx";
+import * as $$$$$$13 from "./sections/Logos.tsx";
+import * as $$$$$$14 from "./sections/PhotoGrid.tsx";
+import * as $$$$$$15 from "./sections/SimpleParagraph.tsx";
+import * as $$$$$$16 from "./sections/Testimonials.tsx";
+import * as $$$$$$17 from "./sections/TextParagraph.tsx";
+import * as $$$$$$18 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
+  "loaders": {
+    "site/loaders/guests.ts": $$$0,
+  },
   "sections": {
     "site/sections/BlogPosts.tsx": $$$$$$0,
     "site/sections/Component.tsx": $$$$$$1,
     "site/sections/DynamicSearchBox.tsx": $$$$$$2,
     "site/sections/Faq.tsx": $$$$$$3,
     "site/sections/Footer.tsx": $$$$$$4,
-    "site/sections/GuestsAdmin.tsx": $$$$$$5,
-    "site/sections/GuestsAutocomplete.tsx": $$$$$$6,
-    "site/sections/Header.tsx": $$$$$$7,
-    "site/sections/hero-1.tsx": $$$$$$18,
-    "site/sections/hero-2.tsx": $$$$$$19,
-    "site/sections/Hero.tsx": $$$$$$8,
-    "site/sections/hero2.tsx": $$$$$$20,
-    "site/sections/HeroOverlay.tsx": $$$$$$9,
-    "site/sections/HeroSided.tsx": $$$$$$10,
-    "site/sections/ImageWithParagraph.tsx": $$$$$$11,
-    "site/sections/Logos.tsx": $$$$$$12,
-    "site/sections/PhotoGrid.tsx": $$$$$$13,
-    "site/sections/SimpleParagraph.tsx": $$$$$$14,
-    "site/sections/Testimonials.tsx": $$$$$$15,
-    "site/sections/TextParagraph.tsx": $$$$$$16,
-    "site/sections/Theme/Theme.tsx": $$$$$$17,
+    "site/sections/GuestsAdmin.tsx": $$$$$$6,
+    "site/sections/GuestsAutocomplete.tsx": $$$$$$7,
+    "site/sections/GuestSearchSection.tsx": $$$$$$5,
+    "site/sections/Header.tsx": $$$$$$8,
+    "site/sections/hero-1.tsx": $$$$$$19,
+    "site/sections/hero-2.tsx": $$$$$$20,
+    "site/sections/Hero.tsx": $$$$$$9,
+    "site/sections/hero2.tsx": $$$$$$21,
+    "site/sections/HeroOverlay.tsx": $$$$$$10,
+    "site/sections/HeroSided.tsx": $$$$$$11,
+    "site/sections/ImageWithParagraph.tsx": $$$$$$12,
+    "site/sections/Logos.tsx": $$$$$$13,
+    "site/sections/PhotoGrid.tsx": $$$$$$14,
+    "site/sections/SimpleParagraph.tsx": $$$$$$15,
+    "site/sections/Testimonials.tsx": $$$$$$16,
+    "site/sections/TextParagraph.tsx": $$$$$$17,
+    "site/sections/Theme/Theme.tsx": $$$$$$18,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,
