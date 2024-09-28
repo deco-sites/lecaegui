@@ -1,14 +1,6 @@
 import { GuestList } from "site/loaders/guests.ts";
 
-export interface Props {
-  guests?: GuestList
-}
-
-export default function GuestSearch(props : Props) {
-
-  const { guests } = props
-
-  console.log(guests?.data)
+export default function GuestSearch(guest : string[]) {
 
   return (
     <div class="flex justify-center flex-col items-center helvetica mt-14">
