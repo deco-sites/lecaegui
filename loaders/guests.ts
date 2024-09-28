@@ -1,6 +1,6 @@
 import creds from "site/static/lecaegui-ebd973469e8e.json" with { type: "json" };
 import { JWT } from 'google-auth-library';
-import { GoogleSpreadsheet } from 'google-spreadsheet'; 
+import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 export interface Guest {
     Nome: string;
@@ -47,8 +47,6 @@ export default async function guests(props : Props): Promise<GuestList> {
         .filter(row => row.get('É +1?') !== 'Sim')
         .map(row => row.get('Nome'))
         .filter(name => name); 
-
-    console.log("Filtered names:", filteredNames); 
 
     return { data: filteredNames };
 }
