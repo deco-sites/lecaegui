@@ -1,6 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import guests, { GuestList } from "site/loaders/guests.ts";
+import { GuestList } from "site/loaders/guests.ts";
 
 export interface Props {
   /** @format code */
@@ -14,9 +14,8 @@ export default function HeroFlats({
   title = "Alexia & Guilherme",
   subtitle = "Save the Date",
   image = "https://placehold.co/3000x1800",
+  guests  
 }: Props) {
-  
-  console.log(guests)
 
   return (
     <nav id="herosided" class="flex flex-row justify-center">
@@ -39,14 +38,16 @@ export default function HeroFlats({
           </div>
           <div class="form-control w-full max-w-xs">
             <label class="label">
-              <span class="label-text text-black">Digite o nome do convidado
-              </span>
+              <span class="label-text text-black">Selecione o nome do convidado</span>
             </label>
-            <input
-              type="text"
-              placeholder="Ex: Ana"
-              class="input input-bordered w-full max-w-xs bg-white text-black"
-            />
+            <select
+              class="select select-bordered w-full max-w-xs bg-white text-black"
+            >
+              <option disabled selected>Escolha um convidado</option>
+              {guests?.data.map((guest, index) => (
+                <option key={index} value={guest}>{guest}</option>
+              ))}
+            </select>
           </div>
         </div>
         {image && (
