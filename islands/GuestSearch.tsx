@@ -27,7 +27,7 @@ export default function GuestSearch(props: Props) {
           ref={selectedGuestRef}
           onChange={handleSelectChange}
         >
-          <option value="" disabled>Escolha um convidado</option>
+          <option value="">Escolha um convidado</option>
           {props.guests?.map((guest, index) => (
             <option key={index} value={guest}>{guest}</option>
           ))}
