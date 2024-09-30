@@ -1,6 +1,7 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { GuestList } from "site/loaders/guests.ts";
+import GuestSearch from "site/islands/GuestSearch.tsx";
 
 export interface Props {
   /** @format code */
@@ -36,19 +37,9 @@ export default function HeroFlats({
               {title}
             </div>
           </div>
-          <div class="form-control w-full max-w-xs">
-            <label class="label">
-              <span class="label-text text-black">Selecione o nome do convidado</span>
-            </label>
-            <select
-              class="select select-bordered w-full max-w-xs bg-white text-black"
-            >
-              <option disabled selected>Escolha um convidado</option>
-              {guests?.data.map((guest, index) => (
-                <option key={index} value={guest}>{guest}</option>
-              ))}
-            </select>
-          </div>
+          
+          <GuestSearch guests={Array.isArray(guests?.data) ? guests.data : []} />
+
         </div>
         {image && (
           <div class="w-1/2 h-full">
