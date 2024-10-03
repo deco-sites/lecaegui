@@ -1,6 +1,3 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
-
 export interface CTA {
   id?: string;
   href: string;
@@ -21,14 +18,14 @@ export interface Props {
   questions?: Question[];
 }
 
-const DEFAULT_IMAGE =
+const _DEFAULT_IMAGE =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9";
 
 export default function BlogPosts({
   title = "FAQs",
   description =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  cta = null,
+  cta = undefined,
   questions = [
     {
       title: "Question #1 text goes here",
@@ -58,7 +55,10 @@ export default function BlogPosts({
   ],
 }: Props) {
   return (
-    <div id="faq" class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm py-12 lg:py-28">
+    <div
+      id="faq"
+      class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm py-12 lg:py-28"
+    >
       <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-between">
         <div class="flex-none space-y-6 lg:w-2/5">
           <p class="text-4xl leading-snug">
@@ -67,17 +67,19 @@ export default function BlogPosts({
           <p class="text-lg">
             {description}
           </p>
-          {cta && (<a
+          {cta && (
+            <a
               key={cta?.id}
               id={cta?.id}
               href={cta?.href}
               target={cta?.href.includes("http") ? "_blank" : "_self"}
-              class={`font-normal btn btn-primary ${cta.outline && "btn-outline"
-                }`}
+              class={`font-normal btn btn-primary ${
+                cta.outline && "btn-outline"
+              }`}
             >
               {cta?.text}
-            </a>)
-          }
+            </a>
+          )}
         </div>
         <div class="flex-auto border-primary border-t">
           {questions?.map((question) => (

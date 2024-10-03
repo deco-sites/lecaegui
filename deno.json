@@ -1,8 +1,8 @@
 {
   "imports": {
     "site/": "./",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.100.0/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.8/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.104.2/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.24/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "preact": "npm:preact@10.23.1",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
@@ -12,8 +12,8 @@
     "daisyui": "npm:daisyui@4.4.19",
     "@cliffy/prompt": "jsr:@cliffy/prompt@^1.0.0-rc.5",
     "@core/asyncutil": "jsr:@core/asyncutil@^1.0.0",
-    "@deco/durable": "jsr:@deco/durable@^0.5.3",
-    "@deco/warp": "jsr:@deco/warp@0.3.7",
+    "@deco/durable": "jsr:@deco/durable@0.5.3",
+    "@deco/warp": "jsr:@deco/warp@0.3.8",
     "@hono/hono": "jsr:@hono/hono@^4.5.4",
     "@std/assert": "jsr:@std/assert@^1.0.2",
     "@std/async": "jsr:@std/async@^0.224.1",
@@ -40,12 +40,13 @@
     "drizzle-orm/": "https://esm.sh/drizzle-orm@0.30.10/",
     "drizzle-kit": "https://esm.sh/drizzle-kit@0.21.2",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@1.99.3",
+    "@deco/deco": "jsr:@deco/deco@1.104.2",
     "google-auth-library": "npm:google-auth-library@^9.14.1",
-    "google-spreadsheet": "npm:google-spreadsheet@^4.1.4"
+    "google-spreadsheet": "npm:google-spreadsheet@^4.1.4",
+    "@deco/dev": "jsr:@deco/dev@1.104.0"
   },
   "tasks": {
-    "start": "deno run -Ar --unstable-http --env https://deco.cx/run -- deno task dev",
+    "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
     "gen": "deno run -A dev.ts --gen-only",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
     "release": "deno eval 'import \"deco/scripts/release.ts\"'",

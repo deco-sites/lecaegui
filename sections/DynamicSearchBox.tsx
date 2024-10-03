@@ -1,4 +1,3 @@
-
 import type { HTMLWidget } from "apps/admin/widgets.ts";
 
 interface Props {
@@ -63,7 +62,8 @@ export default function DynamicSearchBox({
           id="search-results"
           className="bg-white p-4 rounded-lg shadow"
           dangerouslySetInnerHTML={{ __html: resultsContainer }}
-        ></div>
+        >
+        </div>
       </div>
     </div>
   );
