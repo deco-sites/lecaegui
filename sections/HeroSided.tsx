@@ -15,19 +15,14 @@ export default function HeroFlats({
   title = "Alexia & Guilherme",
   subtitle = "Save the Date",
   image = "https://placehold.co/3000x1800",
-  guests  
+  guests,
 }: Props) {
-
   return (
     <nav id="herosided" class="flex flex-row justify-center">
-      <div
-        class="flex flex-row items-center justify-between relative w-full max-w-7xl lg:mx-auto h-[calc((832/1280)*100vw)] xl:h-[832px]"
-      >
+      <div class="flex flex-row items-center justify-between relative w-full max-w-7xl lg:mx-auto h-[calc((832/1280)*100vw)] xl:h-[832px]">
         <div class="flex flex-col items-start w-1/2 z-20 p-8 space-y-6">
           <div class="space-y-4 lg:max-w-2xl animate-fadeIn">
-            <div
-              class="block text-sm lg:text-2xl leading-normal uppercase helvetica tracking-[8px] text-black"
-            >
+            <div class="block text-sm lg:text-2xl leading-normal uppercase helvetica tracking-[8px] text-black">
               {subtitle}
             </div>
             <div
@@ -37,9 +32,10 @@ export default function HeroFlats({
               {title}
             </div>
           </div>
-          
-          <GuestSearch guests={Array.isArray(guests?.data) ? guests.data : []} />
 
+          <GuestSearch
+            guests={Array.isArray(guests?.data) ? guests.data : []}
+          />
         </div>
         {image && (
           <div class="w-1/2 h-full">

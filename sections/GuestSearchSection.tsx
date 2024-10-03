@@ -1,1 +1,1 @@
-export {default} from "site/islands/GuestSearch.tsx";
+export { default } from "site/islands/GuestSearch.tsx";
