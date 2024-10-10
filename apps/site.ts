@@ -2,13 +2,13 @@ import website, { Props as WebsiteProps } from "apps/website/mod.ts";
 import manifest, { Manifest } from "../manifest.gen.ts";
 import { type App, type AppContext as AC } from "@deco/deco";
 import { Secret } from "apps/website/loaders/secret.ts";
-import { JWT } from 'google-auth-library';
-import { GoogleSpreadsheet } from 'google-spreadsheet';
+import { JWT } from "google-auth-library";
+import { GoogleSpreadsheet } from "google-spreadsheet";
 
 interface MinhasProps extends WebsiteProps {
-  client_email?: string
-  private_key?: Secret
-  doc?: GoogleSpreadsheet
+  client_email?: string;
+  private_key?: Secret;
+  doc?: GoogleSpreadsheet;
 }
 
 type WebsiteApp = ReturnType<typeof website>;
@@ -18,13 +18,14 @@ type WebsiteApp = ReturnType<typeof website>;
  * @category Tool
  * @logo https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1/0ac02239-61e6-4289-8a36-e78c0975bcc8
  */
-export default function Site(state: MinhasProps): App<Manifest, MinhasProps, [WebsiteApp]> {
-
-  console.log(state)
+export default function Site(
+  state: MinhasProps,
+): App<Manifest, MinhasProps, [WebsiteApp]> {
+  console.log(state);
 
   const SCOPES = [
-    'https://www.googleapis.com/auth/spreadsheets',
-    'https://www.googleapis.com/auth/drive.file',
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
   ];
 
   const jwt = new JWT({
@@ -33,12 +34,15 @@ export default function Site(state: MinhasProps): App<Manifest, MinhasProps, [We
     scopes: SCOPES,
   });
 
-  const doc = new GoogleSpreadsheet('1_nIZM0ZGiw_zoEE6CLBamVZevr6NMTZkronP7mj1O7I', jwt);
+  const doc = new GoogleSpreadsheet(
+    "1_nIZM0ZGiw_zoEE6CLBamVZevr6NMTZkronP7mj1O7I",
+    jwt,
+  );
 
   return {
-    state : {
+    state: {
       ...state,
-      doc, 
+      doc,
     },
     manifest,
     dependencies: [

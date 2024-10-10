@@ -23,19 +23,22 @@ export interface Props {
   chrt?: string;
 }
 
-export default async function guests(_props: Props, _req : Request ,ctx : AppContext): Promise<GuestList> {
-  
+export default async function guests(
+  _props: Props,
+  _req: Request,
+  ctx: AppContext,
+): Promise<GuestList> {
   let sheet;
-  let rows; 
-  
-  if(ctx.private_key?.get() != null) {
+  let rows;
+
+  if (ctx.private_key?.get() != null) {
     await ctx.doc?.loadInfo();
-    sheet = ctx.doc?.sheetsByIndex[0]; 
-    rows = await sheet?.getRows(); 
+    sheet = ctx.doc?.sheetsByIndex[0];
+    rows = await sheet?.getRows();
   } else {
     await doc.loadInfo();
-    sheet = doc.sheetsByIndex[0]; 
-    rows = await sheet.getRows(); 
+    sheet = doc.sheetsByIndex[0];
+    rows = await sheet.getRows();
   }
   const filteredNames = rows?.filter((row) => row.get("É +1?") !== "Sim")
     .map((row) => row.get("Nome")) || [];

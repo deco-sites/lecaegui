@@ -10,19 +10,23 @@ export interface Result {
   status: "ok" | "fail";
 }
 
-export default async function addGuest(props: Props, _req: Request, ctx : AppContext): Promise<Result> {
+export default async function addGuest(
+  props: Props,
+  _req: Request,
+  ctx: AppContext,
+): Promise<Result> {
   let sheet;
-  let rows; 
+  let rows;
 
-  try { 
-    if(ctx.private_key?.get() != null) {
+  try {
+    if (ctx.private_key?.get() != null) {
       await ctx.doc?.loadInfo();
-      sheet = ctx.doc?.sheetsByIndex[0]; 
-      rows = await sheet?.getRows(); 
+      sheet = ctx.doc?.sheetsByIndex[0];
+      rows = await sheet?.getRows();
     } else {
       await doc.loadInfo();
-      sheet = doc.sheetsByIndex[0]; 
-      rows = await sheet.getRows(); 
+      sheet = doc.sheetsByIndex[0];
+      rows = await sheet.getRows();
     }
 
     const { name, origin } = props;
