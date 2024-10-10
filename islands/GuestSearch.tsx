@@ -7,24 +7,30 @@ export interface Props {
 
 export default function GuestSearch(props: Props) {
   const [guestValue, setGuestValue] = useState("");
+  const [newGuest, setNewGuest] = useState("");
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
   const [isChecked, setIsChecked] = useState(false);
-
-  const [newGuest, setNewGuest] = useState("");
 
   const handleClick = async () => {
     setLoading(true);
     const response = await invoke.site.actions.confirmGuest({
       name: guestValue,
     });
-    const response2 = await invoke.site.actions.addguests({
-      name: newGuest,
-      origin: guestValue,
-    });
+    let response2;
+    if (isChecked) {
+      response2 = await invoke.site.actions.addguests({
+        name: newGuest,
+        origin: guestValue,
+      });
+    }
     setLoading(false);
-    if (response.status === "ok" && response2.status === "ok") {
+    if (
+      response.status === "ok" && response2?.status === "ok" && isChecked ||
+      response.status === "ok" && !isChecked
+    ) {
       setError(false);
     } else {
       setError(true);
@@ -71,9 +77,16 @@ export default function GuestSearch(props: Props) {
               />
             </div>
           )}
-        <button onClick={handleClick} class="btn">Confirmar</button>
-        {loading && <span class="loading loading-spinner loading-md"></span>}
-        {error && <span class="text-red-500">Ocorreu um erro</span>}
+        <div class="flex flex-col gap-4">
+          <button onClick={handleClick} class="btn">
+            {loading
+              ? <span class="loading loading-spinner loading-md"></span>
+              : "Confirmar"}
+          </button>
+          {error && (
+            <span class="text-red-500">Ocorreu um erro. Tente novamente</span>
+          )}
+        </div>
       </div>
     </div>
   );
