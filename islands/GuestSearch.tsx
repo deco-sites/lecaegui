@@ -48,8 +48,10 @@ export default function GuestSearch(props: Props) {
 
     if (inputValue) {
       const filtered = props.guests
-        .filter((guest) => guest.toLowerCase().includes(inputValue.toLowerCase()))
-        .slice(0, 5); 
+        .filter((guest) =>
+          guest.toLowerCase().includes(inputValue.toLowerCase())
+        )
+        .slice(0, 5);
       setFilteredGuests(filtered);
     } else {
       setFilteredGuests([]);
@@ -66,7 +68,19 @@ export default function GuestSearch(props: Props) {
       {success && (
         <div class="alert alert-success shadow-lg">
           <div>
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="stroke-current h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
             <span>Convidado confirmado com sucesso!</span>
           </div>
         </div>
@@ -123,11 +137,11 @@ export default function GuestSearch(props: Props) {
         )}
         <div class="flex flex-col gap-4">
           <button onClick={handleClick} class="btn">
-            {loading ? (
-              <span class="loading loading-spinner loading-md"></span>
-            ) : (
-              "Confirmar"
-            )}
+            {loading
+              ? <span class="loading loading-spinner loading-md"></span>
+              : (
+                "Confirmar"
+              )}
           </button>
           {error && (
             <span class="text-red-500">Ocorreu um erro. Tente novamente</span>
