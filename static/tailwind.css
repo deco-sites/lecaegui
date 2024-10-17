@@ -2536,6 +2536,9 @@ input.tab:checked + .tab-content,
 .static {
   position: static;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -2656,6 +2659,9 @@ input.tab:checked + .tab-content,
 .ml-2 {
   margin-left: 0.5rem;
 }
+.ml-auto {
+  margin-left: auto;
+}
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -2712,6 +2718,9 @@ input.tab:checked + .tab-content,
 }
 .h-2 {
   height: 0.5rem;
+}
+.h-20 {
+  height: 5rem;
 }
 .h-4 {
   height: 1rem;
@@ -3223,13 +3232,13 @@ input.tab:checked + .tab-content,
   --tw-bg-opacity: 1;
   background-color: rgb(13 23 23 / var(--tw-bg-opacity));
 }
+.bg-\[\#333D29\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 61 41 / var(--tw-bg-opacity));
+}
 .bg-\[\#C9CFCF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(201 207 207 / var(--tw-bg-opacity));
-}
-.bg-\[\#ECE1D3\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 225 211 / var(--tw-bg-opacity));
 }
 .bg-\[var\(--bg-color\)\] {
   background-color: var(--bg-color);
@@ -3261,6 +3270,9 @@ input.tab:checked + .tab-content,
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+.bg-transparent {
+  background-color: transparent;
 }
 .bg-white {
   --tw-bg-opacity: 1;
