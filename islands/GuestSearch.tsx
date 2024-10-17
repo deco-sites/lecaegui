@@ -66,8 +66,8 @@ export default function GuestSearch(props: Props) {
   return (
     <div class="form-control w-full max-w-xs">
       {success && (
-        <div class="alert alert-success shadow-lg">
-          <div>
+        <div class="alert alert-success shadow-lg mb-4">
+          <div >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="stroke-current h-6 w-6"
@@ -85,69 +85,74 @@ export default function GuestSearch(props: Props) {
           </div>
         </div>
       )}
-      <label class="label">
-        <span class="label-text text-black">Selecione o nome do convidado</span>
-      </label>
       <div class="flex flex-col gap-2 relative">
-        <div class="relative">
+        <div class="relative flex items-center">
           <input
             type="text"
-            class="input input-bordered w-full max-w-xs bg-white text-black"
-            placeholder="Escolha um convidado"
+            class="input input-bordered rounded-full w-full max-w-xs bg-white text-black"
+            placeholder="Digite seu nome"
             value={guestValue}
             onInput={handleInputChange}
           />
-          {filteredGuests.length > 0 && (
-            <ul class="absolute top-full mt-1 w-full bg-white border border-gray-300 rounded shadow-lg max-h-40 overflow-y-auto z-10">
-              {filteredGuests.map((guest, index) => (
-                <li
-                  key={index}
-                  class="p-2 hover:bg-gray-200 cursor-pointer"
-                  onClick={() => handleSelect(guest)}
-                >
-                  {guest}
-                </li>
-              ))}
-            </ul>
+          {/* Button conditionally rendered based on isChecked */}
+          {!isChecked && (
+            <button 
+              onClick={handleClick} 
+              class="btn rounded-full bg-[#656D4A] text-white hover:bg-[#4A4F3A] ml-2"
+            >
+              {loading
+                ? <span class="loading loading-spinner loading-md"></span>
+                : "Confirmar"}
+            </button>
           )}
         </div>
-        <div class="flex gap-2 align-center mt-4">
-          <span>Vai levar mais um?</span>
-          <input
-            type="checkbox"
-            class="checkbox"
-            checked={isChecked}
-            onChange={() => setIsChecked(!isChecked)}
-          />
-        </div>
-        {isChecked && (
-          <div>
-            <label class="label">
-              <span class="label-text text-black">
-                Digite o nome de quem vai levar
-              </span>
-            </label>
-            <input
-              class="input input-bordered w-full max-w-xs"
-              type="text"
-              value={newGuest}
-              onChange={(e) => setNewGuest(e.currentTarget.value)}
-            />
-          </div>
+        {filteredGuests.length > 0 && (
+          <ul class="absolute top-full mt-1 w-full bg-white border border-gray-300 rounded shadow-lg max-h-40 overflow-y-auto z-10">
+            {filteredGuests.map((guest, index) => (
+              <li
+                key={index}
+                class="p-2 hover:bg-gray-200 cursor-pointer"
+                onClick={() => handleSelect(guest)}
+              >
+                {guest}
+              </li>
+            ))}
+          </ul>
         )}
-        <div class="flex flex-col gap-4">
-          <button onClick={handleClick} class="btn">
-            {loading
-              ? <span class="loading loading-spinner loading-md"></span>
-              : (
-                "Confirmar"
-              )}
-          </button>
-          {error && (
-            <span class="text-red-500">Ocorreu um erro. Tente novamente</span>
-          )}
-        </div>
       </div>
+      <div class="flex gap-2 align-center mt-4">
+        <span>Irá levar um convidado?</span>
+        <input
+          type="checkbox"
+          class="custom-checkbox mb-4"
+          checked={isChecked}
+          onChange={() => setIsChecked(!isChecked)}
+        />
+      </div>
+      {isChecked && (
+        <div class="flex items-center"> {/* Updated to use flex for alignment */}
+          <input
+            class="input input-bordered rounded-full w-full max-w-xs"
+            placeholder="Escreva o nome do convidado"
+            type="text"
+            value={newGuest}
+            onChange={(e) => setNewGuest(e.currentTarget.value)}
+          />
+          <div class="ml-2"> {/* Added a wrapper div for spacing */}
+            <button 
+              onClick={handleClick} 
+              class="btn rounded-full bg-[#656D4A] text-white hover:bg-[#4A4F3A]"
+            >
+              {loading
+                ? <span class="loading loading-spinner loading-md"></span>
+                : "Confirmar"}
+            </button>
+          </div>
+        </div>
+      )}
+      {error && (
+        <span class="text-red-500">Ocorreu um erro. Tente novamente</span>
+      )}
     </div>
   );
 }
