@@ -21,8 +21,6 @@ type WebsiteApp = ReturnType<typeof website>;
 export default function Site(
   state: MinhasProps,
 ): App<Manifest, MinhasProps, [WebsiteApp]> {
-  console.log(state);
-
   const SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",

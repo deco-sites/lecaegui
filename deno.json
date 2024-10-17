@@ -1,8 +1,8 @@
 {
   "imports": {
     "site/": "./",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.104.2/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.24/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.105.2/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.62.4/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "preact": "npm:preact@10.23.1",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
@@ -40,13 +40,13 @@
     "drizzle-orm/": "https://esm.sh/drizzle-orm@0.30.10/",
     "drizzle-kit": "https://esm.sh/drizzle-kit@0.21.2",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@1.104.2",
+    "@deco/deco": "jsr:@deco/deco@1.105.2",
     "google-auth-library": "npm:google-auth-library@^9.14.1",
     "google-spreadsheet": "npm:google-spreadsheet@^4.1.4",
-    "@deco/dev": "jsr:@deco/dev@1.104.0"
+    "@deco/dev": "jsr:@deco/dev@1.105.2"
   },
   "tasks": {
-    "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
+    "start": "deno run -Ar --unstable-http --env https://deco.cx/run -- deno task dev",
     "gen": "deno run -A dev.ts --gen-only",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
     "release": "deno eval 'import \"deco/scripts/release.ts\"'",

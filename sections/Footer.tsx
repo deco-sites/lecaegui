@@ -14,28 +14,25 @@ function Footer({
   image =
     "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4959/d7aa9290-074f-417c-99c3-5b0587c8c2ee",
   href = "https://deco.cx/",
-  text = "Made with",
+  text = "SAVE THE DATE — 05 . 03 . 2025",
   alt = "Made with deco.cx",
   height = 30,
   width = 60,
 }: Props) {
   return (
-    <div class="py-8 lg:px-0 px-6 bottom-0 w-full mx-auto">
-      <a
-        href={href}
-        class="flex flex-row gap-1 items-center justify-center text-lg"
-        target="_blank"
-      >
-        {text && <p>{text}</p>}
+    <div class="flex items-center w-full h-20 py-8 px-6 lg:px-0 bg-[#333D29] mx-auto">
+      <div class="flex flex-row items-center justify-between w-full text-lg text-white p-8">
         {image && (
           <Image
             src={image || ""}
             alt={alt || ""}
             height={height || 20}
             width={width || 50}
+            href={href || ""}
           />
         )}
-      </a>
+        {text && <p class="text-left ml-auto">{text}</p>}
+      </div>
     </div>
   );
 }
