@@ -21,7 +21,7 @@ function Footer({
 }: Props) {
   return (
     <div class="flex items-center w-full h-20 py-8 px-6 lg:px-0 bg-[#333D29] mx-auto">
-      <div class="flex flex-row items-center justify-between w-full text-lg text-white p-8">
+      <div class="flex flex-row items-center justify-between w-full text-lg text-white px-8">
         {image && (
           <Image
             src={image || ""}
@@ -31,7 +31,7 @@ function Footer({
             href={href || ""}
           />
         )}
-        {text && <p class="text-left ml-auto">{text}</p>}
+        {text && <p class="text-left ml-auto Quincy CF">{text}</p>}
       </div>
     </div>
   );

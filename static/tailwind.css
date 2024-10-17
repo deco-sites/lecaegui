@@ -1794,12 +1794,6 @@ input.tab:checked + .tab-content,
 .divider:not(:empty) {
   gap: 1rem;
 }
-.label-text {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  --tw-text-opacity: 1;
-  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
-}
 .input input:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2522,6 +2516,37 @@ input.tab:checked + .tab-content,
 [data-dot] div .dot {
     background-color: #E4E4E7;
   }
+/* Add this CSS to your styles */
+.custom-checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; /* Remove default checkbox appearance */
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  border: 2px solid #656D4A; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  position: relative;
+  cursor: pointer;
+  background-color: transparent; /* Ensure background is transparent */
+}
+.custom-checkbox:checked {
+  background-color: transparent; /* Keep background transparent */
+}
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px; /* Size of the inner square */
+  height: 14px; /* Size of the inner square */
+  background-color: #656D4A; /* Color of the inner square */
+  border-radius: 4px; /* Optional: for rounded corners of the inner square */
+  transform: translate(-50%, -50%); /* Center the inner square */
+}
+/* Hide the default checkmark */
+.custom-checkbox:checked {
+  outline: none; /* Remove outline */
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -3236,6 +3261,10 @@ input.tab:checked + .tab-content,
   --tw-bg-opacity: 1;
   background-color: rgb(51 61 41 / var(--tw-bg-opacity));
 }
+.bg-\[\#656D4A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(101 109 74 / var(--tw-bg-opacity));
+}
 .bg-\[\#C9CFCF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(201 207 207 / var(--tw-bg-opacity));
@@ -3768,6 +3797,11 @@ input.tab:checked + .tab-content,
   }
 }
 
+.hover\:bg-\[\#4A4F3A\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 79 58 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -4097,6 +4131,11 @@ input.tab:checked + .tab-content,
 
   .lg\:text-\[80px\] {
     font-size: 80px;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:text-lg {

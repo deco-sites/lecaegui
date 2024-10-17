@@ -41,6 +41,39 @@
   [data-dot] div .dot {
     background-color: #E4E4E7;
   }
+
+ /* Add this CSS to your styles */
+.custom-checkbox {
+  appearance: none; /* Remove default checkbox appearance */
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  border: 2px solid #656D4A; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  position: relative;
+  cursor: pointer;
+  background-color: transparent; /* Ensure background is transparent */
+}
+
+.custom-checkbox:checked {
+  background-color: transparent; /* Keep background transparent */
+}
+
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px; /* Size of the inner square */
+  height: 14px; /* Size of the inner square */
+  background-color: #656D4A; /* Color of the inner square */
+  border-radius: 4px; /* Optional: for rounded corners of the inner square */
+  transform: translate(-50%, -50%); /* Center the inner square */
+}
+
+/* Hide the default checkmark */
+.custom-checkbox:checked {
+  outline: none; /* Remove outline */
+}
 }
 
 @layer utilities {
