@@ -67,7 +67,7 @@ export default function GuestSearch(props: Props) {
     <div class="form-control w-full max-w-xs">
       {success && (
         <div class="alert alert-success shadow-lg mb-4">
-          <div >
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="stroke-current h-6 w-6"
@@ -96,8 +96,8 @@ export default function GuestSearch(props: Props) {
           />
           {/* Button conditionally rendered based on isChecked */}
           {!isChecked && (
-            <button 
-              onClick={handleClick} 
+            <button
+              onClick={handleClick}
               class="btn rounded-full bg-[#656D4A] text-white hover:bg-[#4A4F3A] ml-2"
             >
               {loading
@@ -130,7 +130,8 @@ export default function GuestSearch(props: Props) {
         />
       </div>
       {isChecked && (
-        <div class="flex items-center"> {/* Updated to use flex for alignment */}
+        <div class="flex items-center">
+          {/* Updated to use flex for alignment */}
           <input
             class="input input-bordered rounded-full w-full max-w-xs"
             placeholder="Escreva o nome do convidado"
@@ -138,9 +139,10 @@ export default function GuestSearch(props: Props) {
             value={newGuest}
             onChange={(e) => setNewGuest(e.currentTarget.value)}
           />
-          <div class="ml-2"> {/* Added a wrapper div for spacing */}
-            <button 
-              onClick={handleClick} 
+          <div class="ml-2">
+            {/* Added a wrapper div for spacing */}
+            <button
+              onClick={handleClick}
               class="btn rounded-full bg-[#656D4A] text-white hover:bg-[#4A4F3A]"
             >
               {loading
