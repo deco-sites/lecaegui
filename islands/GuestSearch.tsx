@@ -89,7 +89,8 @@ export default function GuestSearch(props: Props) {
         <div class="relative flex items-center">
           <input
             type="text"
-            class="input input-bordered rounded-full w-full max-w-xs bg-white text-black"
+            class="input input-bordered rounded-full w-full max-w-xs bg-transparent text-[#333D29];
+]"
             placeholder="Digite seu nome"
             value={guestValue}
             onInput={handleInputChange}
@@ -133,7 +134,7 @@ export default function GuestSearch(props: Props) {
         <div class="flex items-center">
           {/* Updated to use flex for alignment */}
           <input
-            class="input input-bordered rounded-full w-full max-w-xs"
+            class="input input-bordered rounded-full w-full max-w-xs bg-transparent text-[#333D29]"
             placeholder="Escreva o nome do convidado"
             type="text"
             value={newGuest}
