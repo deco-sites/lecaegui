@@ -2558,6 +2558,9 @@ input.tab:checked + .tab-content,
   white-space: nowrap;
   border-width: 0;
 }
+.pointer-events-none {
+  pointer-events: none;
+}
 .static {
   position: static;
 }
@@ -2570,6 +2573,10 @@ input.tab:checked + .tab-content,
 .relative {
   position: relative;
 }
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -2578,6 +2585,9 @@ input.tab:checked + .tab-content,
 }
 .left-4 {
   left: 1rem;
+}
+.right-0 {
+  right: 0px;
 }
 .right-1 {
   right: 0.25rem;
@@ -2678,6 +2688,9 @@ input.tab:checked + .tab-content,
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -2704,6 +2717,9 @@ input.tab:checked + .tab-content,
 }
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .mt-\[5px\] {
   margin-top: 5px;
@@ -2741,6 +2757,9 @@ input.tab:checked + .tab-content,
 .h-14 {
   height: 3.5rem;
 }
+.h-16 {
+  height: 4rem;
+}
 .h-2 {
   height: 0.5rem;
 }
@@ -2750,8 +2769,14 @@ input.tab:checked + .tab-content,
 .h-4 {
   height: 1rem;
 }
+.h-5 {
+  height: 1.25rem;
+}
 .h-6 {
   height: 1.5rem;
+}
+.h-64 {
+  height: 16rem;
 }
 .h-\[10px\] {
   height: 10px;
@@ -2823,11 +2848,17 @@ input.tab:checked + .tab-content,
 .w-14 {
   width: 3.5rem;
 }
+.w-16 {
+  width: 4rem;
+}
 .w-2 {
   width: 0.5rem;
 }
 .w-4 {
   width: 1rem;
+}
+.w-5 {
+  width: 1.25rem;
 }
 .w-6 {
   width: 1.5rem;
@@ -2875,6 +2906,9 @@ input.tab:checked + .tab-content,
 }
 .min-w-\[157px\] {
   min-width: 157px;
+}
+.min-w-\[300px\] {
+  min-width: 300px;
 }
 .min-w-\[400px\] {
   min-width: 400px;
@@ -3023,6 +3057,11 @@ input.tab:checked + .tab-content,
 .list-disc {
   list-style-type: disc;
 }
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -3103,6 +3142,11 @@ input.tab:checked + .tab-content,
 }
 .gap-\[6px\] {
   gap: 6px;
+}
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-y-16 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -3233,6 +3277,10 @@ input.tab:checked + .tab-content,
 }
 .border-t {
   border-top-width: 1px;
+}
+.border-\[\#656D4A\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(101 109 74 / var(--tw-border-opacity));
 }
 .border-base-content {
   --tw-border-opacity: 1;
@@ -3423,14 +3471,23 @@ input.tab:checked + .tab-content,
 .pl-1 {
   padding-left: 0.25rem;
 }
+.pl-10 {
+  padding-left: 2.5rem;
+}
 .pl-3 {
   padding-left: 0.75rem;
 }
 .pr-2 {
   padding-right: 0.5rem;
 }
+.pr-3 {
+  padding-right: 0.75rem;
+}
 .pr-4 {
   padding-right: 1rem;
+}
+.pr-8 {
+  padding-right: 2rem;
 }
 .pt-12 {
   padding-top: 3rem;
@@ -3489,6 +3546,9 @@ input.tab:checked + .tab-content,
 }
 .text-\[15px\] {
   font-size: 15px;
+}
+.text-\[18px\] {
+  font-size: 18px;
 }
 .text-\[24px\] {
   font-size: 24px;
@@ -3598,8 +3658,20 @@ input.tab:checked + .tab-content,
   --tw-text-opacity: 1;
   color: rgb(5 126 181 / var(--tw-text-opacity));
 }
+.text-\[\#10150B\] {
+  --tw-text-opacity: 1;
+  color: rgb(16 21 11 / var(--tw-text-opacity));
+}
 .text-\[\#1e1e1e99\] {
   color: #1e1e1e99;
+}
+.text-\[\#333D29\] {
+  --tw-text-opacity: 1;
+  color: rgb(51 61 41 / var(--tw-text-opacity));
+}
+.text-\[\#656D4A\] {
+  --tw-text-opacity: 1;
+  color: rgb(101 109 74 / var(--tw-text-opacity));
 }
 .text-\[\#667781\] {
   --tw-text-opacity: 1;
@@ -3807,6 +3879,11 @@ input.tab:checked + .tab-content,
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.focus\:border-gray-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -3936,6 +4013,10 @@ input.tab:checked + .tab-content,
 
   .md\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
