@@ -44,7 +44,6 @@ export default function Info({
               decoding="async"
               loading="lazy"
             />
-
             <div className="p-8">
               <h3 className="text-4xl font-semibold text-[#10150B] mb-2">
                 {item.title}
@@ -71,7 +70,7 @@ export default function Info({
         backgroundPosition: "center",
       }}
     >
-      <div className="flex flex-col items-center relative w-full max-w-7xl lg:mx-auto h-[calc((832/1280)*100vw)] xl:h-[832px]">
+      <div className="flex flex-col items-center relative w-full max-w-7xl lg:mx-auto">
         {prefixIcon && (
           <div className="w-16 h-16 mb-6">
             <Image
@@ -90,7 +89,7 @@ export default function Info({
           {title}
         </h1>
 
-        <div className="w-full">
+        <div className="w-full flex flex-col items-center">
           <div className="flex justify-center space-x-6 mb-6">
             {options.map((option, index) => (
               <button
