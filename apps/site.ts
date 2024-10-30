@@ -26,7 +26,7 @@ export default function Site(
     "https://www.googleapis.com/auth/drive.file",
   ];
 
-  console.log("CHAVE_SECRETA", state.private_key?.get())
+  console.log("CHAVE_SECRETA", state.private_key?.get());
 
   const jwt = new JWT({
     email: state.client_email,
