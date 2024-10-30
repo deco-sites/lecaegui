@@ -27,6 +27,7 @@ export default function Site(
   ];
 
   console.log("CHAVE_SECRETA", state.private_key?.get());
+  console.log("STATE", state);
 
   const jwt = new JWT({
     email: state.client_email,
