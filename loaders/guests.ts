@@ -1,4 +1,4 @@
-import { doc } from "site/googleCreds.ts";
+// import { doc } from "site/googleCreds.ts";
 import { AppContext } from "site/apps/site.ts";
 
 export interface Guest {
@@ -36,9 +36,9 @@ export default async function guests(
     sheet = ctx.doc?.sheetsByIndex[0];
     rows = await sheet?.getRows();
   } else {
-    await doc.loadInfo();
-    sheet = doc.sheetsByIndex[0];
-    rows = await sheet.getRows();
+    // await doc.loadInfo();
+    // sheet = doc.sheetsByIndex[0];
+    // rows = await sheet.getRows();
   }
   const filteredNames = rows?.filter((row) => row.get("É +1?") !== "Sim")
     .map((row) => row.get("Nome")) || [];

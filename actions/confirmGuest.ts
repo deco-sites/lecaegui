@@ -1,4 +1,4 @@
-import { doc } from "site/googleCreds.ts";
+// import { doc } from "site/googleCreds.ts";
 import { AppContext } from "site/apps/site.ts";
 
 export interface Props {
@@ -25,9 +25,9 @@ export default async function confirmGuest(
       sheet = ctx.doc?.sheetsByIndex[0];
       rows = await sheet?.getRows();
     } else {
-      await doc.loadInfo();
-      sheet = doc.sheetsByIndex[0];
-      rows = await sheet.getRows();
+      // await doc.loadInfo();
+      // sheet = doc.sheetsByIndex[0];
+      // rows = await sheet.getRows();
     }
 
     const { name } = props;
