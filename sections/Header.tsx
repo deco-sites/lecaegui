@@ -17,8 +17,8 @@ export default function Header({
   alt,
   width,
   height,
-  translateIcon,
-  selectIcon,
+  // translateIcon,
+  // selectIcon,
 }: Nav) {
   return (
     <nav className="py-8 px-6 w-full bg-transparent fixed top-0 z-10">
@@ -57,7 +57,8 @@ export default function Header({
           </div>
         </div>
 
-        <div className="relative">
+        {
+          /* <div className="relative">
           <select
             className="appearance-none bg-white border border-gray-300 rounded-full py-2 px-4 pr-8 pl-10 text-sm cursor-pointer focus:outline-none focus:border-gray-500"
             onChange={(e) => handleLanguageChange(e)}
@@ -89,7 +90,8 @@ export default function Header({
               />
             </div>
           )}
-        </div>
+        </div> */
+        }
       </div>
     </nav>
   );
@@ -106,7 +108,7 @@ function handleSmoothScroll(e: Event, id: string) {
   }
 }
 
-function handleLanguageChange(e: React.ChangeEvent<HTMLSelectElement>) {
-  const selectedLanguage = e.currentTarget.value;
-  console.log(`Idioma selecionado: ${selectedLanguage}`);
-}
+// function handleLanguageChange(e: React.ChangeEvent<HTMLSelectElement>) {
+//   const selectedLanguage = e.currentTarget.value;
+//   console.log(`Idioma selecionado: ${selectedLanguage}`);
+// }
