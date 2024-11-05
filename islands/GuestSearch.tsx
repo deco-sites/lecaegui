@@ -149,16 +149,16 @@ export default function GuestSearch(props: Props) {
           </div>
         </div>
       )}
-          <div class="mt-2 sm:mt-0 sm:ml-2">
-            <button
-              onClick={handleClick}
-              class="btn rounded-full w-full bg-[#656D4A] text-white hover:bg-[#4A4F3A] sm:hidden"
-            >
-              {loading
-                ? <span class="loading loading-spinner loading-md"></span>
-                : "Confirmar"}
-            </button>
-          </div>
+      <div class="mt-2 sm:mt-0 sm:ml-2">
+        <button
+          onClick={handleClick}
+          class="btn rounded-full w-full bg-[#656D4A] text-white hover:bg-[#4A4F3A] sm:hidden"
+        >
+          {loading
+            ? <span class="loading loading-spinner loading-md"></span>
+            : "Confirmar"}
+        </button>
+      </div>
       {error && (
         <span class="text-red-500">Ocorreu um erro. Tente novamente</span>
       )}

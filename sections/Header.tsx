@@ -1,1 +1,1 @@
-export { default } from "site/islands/HeaderNav.tsx"
+export { default } from "site/islands/HeaderNav.tsx";

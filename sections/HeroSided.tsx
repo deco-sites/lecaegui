@@ -21,7 +21,7 @@ export default function HeroFlats({
   return (
     <nav
       id="herosided"
-      class="flex flex-col sm:flex-row justify-center" 
+      class="flex flex-col sm:flex-row justify-center"
       style={{
         backgroundImage: backgroundtexture
           ? `url(${backgroundtexture})`
