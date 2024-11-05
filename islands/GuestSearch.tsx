@@ -89,17 +89,15 @@ export default function GuestSearch(props: Props) {
         <div class="relative flex items-center">
           <input
             type="text"
-            class="input input-bordered rounded-full w-full max-w-xs bg-transparent text-[#333D29];
-]"
+            class="input input-bordered rounded-full w-full max-w-xs bg-transparent text-[#333D29]"
             placeholder="Digite seu nome"
             value={guestValue}
             onInput={handleInputChange}
           />
-          {/* Button conditionally rendered based on isChecked */}
           {!isChecked && (
             <button
               onClick={handleClick}
-              class="btn rounded-full bg-[#656D4A] text-white hover:bg-[#4A4F3A] ml-2"
+              class="btn rounded-full bg-[#656D4A] text-white hover:bg-[#4A4F3A] ml-2 hidden sm:block"
             >
               {loading
                 ? <span class="loading loading-spinner loading-md"></span>
@@ -131,8 +129,7 @@ export default function GuestSearch(props: Props) {
         />
       </div>
       {isChecked && (
-        <div class="flex items-center">
-          {/* Updated to use flex for alignment */}
+        <div class="flex flex-col sm:flex-row items-center">
           <input
             class="input input-bordered rounded-full w-full max-w-xs bg-transparent text-[#333D29]"
             placeholder="Escreva o nome do convidado"
@@ -140,11 +137,10 @@ export default function GuestSearch(props: Props) {
             value={newGuest}
             onChange={(e) => setNewGuest(e.currentTarget.value)}
           />
-          <div class="ml-2">
-            {/* Added a wrapper div for spacing */}
+          <div class="mt-2 sm:mt-0 sm:ml-2">
             <button
               onClick={handleClick}
-              class="btn rounded-full bg-[#656D4A] text-white hover:bg-[#4A4F3A]"
+              class="btn rounded-full w-full bg-[#656D4A] text-white hover:bg-[#4A4F3A] hidden sm:block"
             >
               {loading
                 ? <span class="loading loading-spinner loading-md"></span>
@@ -153,6 +149,16 @@ export default function GuestSearch(props: Props) {
           </div>
         </div>
       )}
+          <div class="mt-2 sm:mt-0 sm:ml-2">
+            <button
+              onClick={handleClick}
+              class="btn rounded-full w-full bg-[#656D4A] text-white hover:bg-[#4A4F3A] sm:hidden"
+            >
+              {loading
+                ? <span class="loading loading-spinner loading-md"></span>
+                : "Confirmar"}
+            </button>
+          </div>
       {error && (
         <span class="text-red-500">Ocorreu um erro. Tente novamente</span>
       )}

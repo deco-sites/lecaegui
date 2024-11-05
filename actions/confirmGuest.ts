@@ -17,8 +17,6 @@ export default async function confirmGuest(
   let sheet;
   let rows;
 
-  console.log("DOC:", ctx.private_key?.get());
-
   try {
     if (ctx.private_key?.get() != null) {
       await ctx.doc?.loadInfo();

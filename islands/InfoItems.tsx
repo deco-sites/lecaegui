@@ -60,7 +60,8 @@ export default function Info({
     ?.items;
 
   return (
-    <div
+    <nav
+      id="information"
       className="flex flex-col items-center justify-center"
       style={{
         backgroundImage: backgroundtexture
@@ -108,6 +109,6 @@ export default function Info({
           {renderOptions(selectedItems)}
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

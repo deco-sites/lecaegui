@@ -4,7 +4,6 @@ import { GuestList } from "site/loaders/guests.ts";
 import GuestSearch from "site/islands/GuestSearch.tsx";
 
 export interface Props {
-  /** @format code */
   title?: string;
   subtitle?: string;
   image?: ImageWidget;
@@ -22,7 +21,7 @@ export default function HeroFlats({
   return (
     <nav
       id="herosided"
-      class="flex flex-row justify-center"
+      class="flex flex-col sm:flex-row justify-center" 
       style={{
         backgroundImage: backgroundtexture
           ? `url(${backgroundtexture})`
@@ -31,9 +30,9 @@ export default function HeroFlats({
         backgroundPosition: "center",
       }}
     >
-      <div class="flex flex-row items-center relative w-full max-w-7xl lg:mx-auto h-[calc((832/1280)*100vw)] xl:h-[832px]">
-        <div class="flex flex-col items-start w-1/2 z-20 p-8 space-y-6">
-          <div class="space-y-4 lg:max-w-2xl animate-fadeIn">
+      <div class="flex flex-col mt-24 lg:mt-0 sm:flex-row items-center justify-center w-full max-w-7xl lg:mx-auto h-auto sm:h-[calc((832/1280)*100vw)] xl:h-[832px]">
+        <div class="flex flex-col items-center w-full sm:w-1/2 z-20 p-8 space-y-6 order-1 sm:order-1">
+          <div class="flex flex-col items-center space-y-4 lg:max-w-2xl animate-fadeIn">
             <div
               class="block text-5xl lg:text-8xl text-black"
               style="font-family: Mr De Haviland"
@@ -50,7 +49,7 @@ export default function HeroFlats({
           />
         </div>
         {image && (
-          <div class="w-1/2 h-full">
+          <div class="w-full sm:w-1/2 h-full order-2 sm:order-2">
             <Image
               width={640}
               height={832}
