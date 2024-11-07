@@ -31,7 +31,7 @@ export default function HeroFlats({
       }}
     >
       <div class="flex flex-col mt-24 lg:mt-0 sm:flex-row items-center justify-center w-full max-w-7xl lg:mx-auto h-auto sm:h-[calc((832/1280)*100vw)] xl:h-[832px]">
-        <div class="flex flex-col items-center w-full sm:w-1/2 z-20 p-8 space-y-6 order-1 sm:order-1">
+        <div class="flex flex-col md:items-start items-center w-full sm:w-1/2 z-20 p-8 space-y-6 order-1 sm:order-1">
           <div class="flex flex-col items-center space-y-4 lg:max-w-2xl animate-fadeIn">
             <div
               class="block text-5xl lg:text-8xl text-black"
