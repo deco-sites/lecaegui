@@ -8,7 +8,7 @@ import { GoogleSpreadsheet } from "google-spreadsheet";
 interface MinhasProps extends WebsiteProps {
   client_email?: string;
   private_key?: Secret;
-  doc?: GoogleSpreadsheet;
+  doc?: GoogleSpreadsheet | null;
 }
 
 type WebsiteApp = ReturnType<typeof website>;
@@ -21,32 +21,46 @@ type WebsiteApp = ReturnType<typeof website>;
 export default function Site(
   state: MinhasProps,
 ): App<Manifest, MinhasProps, [WebsiteApp]> {
-  const SCOPES = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-  ];
+  try {
+    const SCOPES = [
+      "https://www.googleapis.com/auth/spreadsheets",
+      "https://www.googleapis.com/auth/drive.file",
+    ];
 
-  const jwt = new JWT({
-    email: state.client_email,
-    key: atob(state.private_key?.get() || ""),
-    scopes: SCOPES,
-  });
+    const jwt = new JWT({
+      email: state.client_email,
+      key: atob(state.private_key?.get() || ""),
+      scopes: SCOPES,
+    });
 
-  const doc = new GoogleSpreadsheet(
-    "1_nIZM0ZGiw_zoEE6CLBamVZevr6NMTZkronP7mj1O7I",
-    jwt,
-  );
+    const doc = new GoogleSpreadsheet(
+      "1_nIZM0ZGiw_zoEE6CLBamVZevr6NMTZkronP7mj1O7I",
+      jwt,
+    );
 
-  return {
-    state: {
-      ...state,
-      doc,
-    },
-    manifest,
-    dependencies: [
-      website(state),
-    ],
-  };
+    return {
+      state: {
+        ...state,
+        doc,
+      },
+      manifest,
+      dependencies: [
+        website(state),
+      ],
+    };
+  } catch (e) {
+    console.log(e);
+    return {
+      state: {
+        ...state,
+        doc: null,
+      },
+      manifest,
+      dependencies: [
+        website(state),
+      ],
+    };
+  }
 }
 export type SiteApp = ReturnType<typeof Site>;
 export type AppContext = AC<SiteApp>;
