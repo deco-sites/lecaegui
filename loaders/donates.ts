@@ -5,7 +5,7 @@ export interface DonorList {
 }
 
 export interface Props {
-  tmp: string
+  tmp: string;
 }
 
 export default async function donates(
