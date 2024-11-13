@@ -2961,8 +2961,14 @@ input.tab:checked + .tab-content,
 .w-2 {
   width: 0.5rem;
 }
+.w-2\/3 {
+  width: 66.666667%;
+}
 .w-4 {
   width: 1rem;
+}
+.w-40 {
+  width: 10rem;
 }
 .w-6 {
   width: 1.5rem;

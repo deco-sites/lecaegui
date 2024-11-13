@@ -102,6 +102,17 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Donates.tsx",
+        "backgroundtexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
+        "prefixIcon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/3b75b9b2-10c0-443d-811f-63bf89bdceee/image-47.png",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/fdbe9b0a-0c9e-46b1-aa9e-c54853a44db4/guanabara2-1.png",
+        "title": "Contribua para o Rio Endowment e faça parte desse gesto especial",
+        "description": "Em vez de presentes, convidamos você a apoiar uma causa próxima ao nosso coração. Todas as doações serão destinadas ao Rio Endowment, uma iniciativa que ajuda a despertar o potencial dos alunos, transformando suas vidas e criando um legado duradouro.  Ah, e para deixar as coisas mais divertidas, temos um ranking ao lado com quem doou mais — sua chance de brilhar um pouquinho mais no nosso grande dia!"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Footer.tsx",
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/47008f1a-9f48-4434-b048-9b8c6a4ddd48/Camada_1.svg"
       }

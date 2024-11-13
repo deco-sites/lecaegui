@@ -53,7 +53,7 @@ function HeaderNav({
               Informações
             </a>
             <span>/</span>
-            <a href="#" onClick={(e) => handleSmoothScroll(e, "faq")}>
+            <a href="#donate" onClick={(e) => handleSmoothScroll(e, "donate")}>
               Donate
             </a>
           </div>
@@ -91,7 +91,7 @@ function HeaderNav({
             <a
               href="#faq"
               onClick={(e) => {
-                handleSmoothScroll(e, "faq");
+                handleSmoothScroll(e, "donate");
                 setMenuOpen(false);
               }}
             >

@@ -66,7 +66,7 @@ export default function GuestSearch(props: Props) {
   return (
     <div class="form-control w-full max-w-xs">
       {success && (
-        <div class="alert alert-success shadow-lg mb-4">
+        <div class="alert alert-success shadow-lg mb-4 flex">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
