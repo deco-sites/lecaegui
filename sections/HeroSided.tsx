@@ -6,9 +6,19 @@ import GuestSearch from "site/islands/GuestSearch.tsx";
 export interface Props {
   title?: string;
   subtitle?: string;
+  date?: string;
   image?: ImageWidget;
   guests?: GuestList;
   backgroundtexture?: ImageWidget;
+}
+
+export function LoadingFallback()  {
+  
+  return (
+    <div className="h-screen w-full flex justify-center align-center">
+      <span class="loading loading-spinner loading-md"></span>
+    </div>
+  )
 }
 
 export default function HeroFlats({
@@ -17,6 +27,7 @@ export default function HeroFlats({
   image = "https://placehold.co/3000x1800",
   guests,
   backgroundtexture,
+  date,
 }: Props) {
   return (
     <nav
@@ -41,6 +52,9 @@ export default function HeroFlats({
             </div>
             <div class="block text-sm lg:text-base leading-normal uppercase helvetica tracking-[8px] text-black">
               {subtitle}
+            </div>
+            <div class='block font-bold text-sm lg:text-base leading-normal uppercase helvetica tracking-[8px] text-black'>
+              {date}
             </div>
           </div>
 
