@@ -41,62 +41,22 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Hero-3.tsx",
-        "backgroundtexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/4ba323c0-9238-4951-bc34-6c87125a8bae/guiealexia-1.svg",
-        "prefixIcon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/22e66769-9665-41c3-ab5e-021bc4db5c5f/Star-1.svg",
         "subtitle": "SAVE THE DATE — 05 . 03 . 2025",
         "title": "Sobre o Casamento",
-        "description": "Vamos curtir um fim de semana animado na serra do Rio. Na sexta teremos um esquenta e a cerimônia e festa no sábado, dia 3 de Maio de 2025.  Reserve a sua agenda, compre as suas passagens e em breve voltamos com mais informações!"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Info.tsx",
-        "prefixIcon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/22e66769-9665-41c3-ab5e-021bc4db5c5f/Star-1.svg",
-        "title": "Informações & Acomodações",
         "backgroundtexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
-        "options": [
-          {
-            "items": [
-              {
-                "title": "Castelo de Itaipava",
-                "description": "Nossa principal sugestão de pousada perto do casamento. Lorem ipsum dolor",
-                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/cf161470-66f6-41ac-abf3-af36c790974f/Castelo-de-Itaipava.jpeg"
-              },
-              {
-                "title": "Flat Itaipava",
-                "description": "Nossa principal sugestão de pousada perto do casamento. Lorem ipsum dolor",
-                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/eae94e1f-b5bf-4e23-a0ee-c203b3757490/flat-itaipava.jpg"
-              }
-            ],
-            "label": "Hotéis"
-          },
-          {
-            "items": [
-              {
-                "description": "Nossa principal recomendação de salão de beleza",
-                "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/9557c299-69cb-4308-9846-c51d37430a5b/salao-1.png",
-                "title": "Mariana Amaro"
-              }
-            ],
-            "label": "Salões de beleza"
-          },
-          {
-            "items": [],
-            "label": "Outros"
-          }
-        ]
+        "prefixIcon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/22e66769-9665-41c3-ab5e-021bc4db5c5f/Star-1.svg",
+        "description": "Vamos curtir um fim de semana animado na Serra do Rio. A cerimônia e festa serão no sábado, dia 3 de Maio de 2025 às 15h.  Reserve a sua agenda e compre as suas passagens! Em breve, sugestões de hotéis por aqui."
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/RegressiveCount.tsx",
+        "title": "SAVE THE DATE — 03 . 05 . 2025",
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/b1f6555e-1266-43cf-9058-e8fb0ba63dde/itaipava3-1.svg",
-        "backgroundTexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
-        "title": "SAVE THE DATE — 05 . 03 . 2025",
-        "subtitle": "Contagem regressiva para o grande dia"
+        "subtitle": "Contagem regressiva para o grande dia",
+        "backgroundTexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png"
       }
     },
     {
@@ -114,7 +74,8 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Footer.tsx",
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/47008f1a-9f48-4434-b048-9b8c6a4ddd48/Camada_1.svg"
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/47008f1a-9f48-4434-b048-9b8c6a4ddd48/Camada_1.svg",
+        "text": "SAVE THE DATE — 03 . 05 . 2025"
       }
     }
   ],
