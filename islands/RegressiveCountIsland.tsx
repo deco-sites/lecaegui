@@ -7,10 +7,11 @@ export interface Props {
   title: string;
   subtitle: string;
   backgroundTexture: ImageWidget;
+  hideImage?: boolean;
 }
 
 export default function CountdownBanner(
-  { image, title, subtitle, backgroundTexture }: Props,
+  { image, title, subtitle, backgroundTexture, hideImage }: Props,
 ) {
   const targetDate = new Date("2025-03-05T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
@@ -56,7 +57,8 @@ export default function CountdownBanner(
         backgroundPosition: "center",
       }}
     >
-      <Image
+      {
+        hideImage ?? <Image
         src={image}
         alt="Background"
         width={1920}
@@ -65,6 +67,8 @@ export default function CountdownBanner(
         decoding="async"
         loading="lazy"
       />
+      }
+      
 
       <div className="flex flex-col w-full bg-[#656D4A] py-12 px-14 items-center text-center md:flex-row md:justify-evenly md:text-left">
         <div className="mb-6 md:mb-0">
