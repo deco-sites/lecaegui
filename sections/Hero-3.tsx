@@ -12,8 +12,8 @@ export interface Props {
 }
 
 const PLACEMENT = {
-  left: "flex-col text-left lg:flex-row-reverse",
-  right: "flex-col text-left lg:flex-row",
+  left: "flex-col-reverse text-left lg:flex-row-reverse",
+  right: "flex-col-reverse text-left lg:flex-row",
 };
 
 export function LoadingFallback() {

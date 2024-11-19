@@ -34,7 +34,7 @@ export default function Info({
         {items?.map((item, index) => (
           <div
             key={index}
-            className="min-w-[300px] border border-[#656D4A] flex flex-col items-center"
+            className="min-w-[300px] border border-[#656D4A] flex flex-col items-center mx-4 md:mx-0 rounded"
           >
             <Image
               src={item.image}
@@ -44,7 +44,7 @@ export default function Info({
               decoding="async"
               loading="lazy"
             />
-            <div className="p-8">
+            <div className="p-8 text-left">
               <h3 className="text-4xl font-semibold text-[#10150B] mb-2">
                 {item.title}
               </h3>
@@ -86,7 +86,7 @@ export default function Info({
           </div>
         )}
 
-        <h1 className="text-4xl lg:text-5xl text-[#10150B] font-bold mb-8">
+        <h1 className="text-4xl lg:text-5xl text-[#10150B] font-bold mb-8 text-center md:text-left">
           {title}
         </h1>
 
@@ -112,3 +112,4 @@ export default function Info({
     </nav>
   );
 }
+
