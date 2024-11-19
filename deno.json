@@ -46,7 +46,7 @@
     "@deco/dev": "jsr:@deco/dev@1.105.2"
   },
   "tasks": {
-    "start": "deno run -Ar --unstable-http --env https://deco.cx/run -- deno task dev",
+    "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
     "gen": "deno run -A dev.ts --gen-only",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
     "release": "deno eval 'import \"deco/scripts/release.ts\"'",

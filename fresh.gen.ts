@@ -6,6 +6,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $GuestSearch from "./islands/GuestSearch.tsx";
 import * as $HeaderNav from "./islands/HeaderNav.tsx";
 import * as $InfoItems from "./islands/InfoItems.tsx";
+import * as $PixModal from "./islands/PixModal.tsx";
 import * as $RegressiveCountIsland from "./islands/RegressiveCountIsland.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -17,6 +18,7 @@ const manifest = {
     "./islands/GuestSearch.tsx": $GuestSearch,
     "./islands/HeaderNav.tsx": $HeaderNav,
     "./islands/InfoItems.tsx": $InfoItems,
+    "./islands/PixModal.tsx": $PixModal,
     "./islands/RegressiveCountIsland.tsx": $RegressiveCountIsland,
   },
   baseUrl: import.meta.url,

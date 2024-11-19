@@ -12,13 +12,12 @@ export interface Props {
   backgroundtexture?: ImageWidget;
 }
 
-export function LoadingFallback()  {
-  
+export function LoadingFallback() {
   return (
     <div className="h-screen w-full flex justify-center align-center">
       <span class="loading loading-spinner loading-md"></span>
     </div>
-  )
+  );
 }
 
 export default function HeroFlats({
@@ -53,7 +52,7 @@ export default function HeroFlats({
             <div class="block text-sm lg:text-base leading-normal uppercase helvetica tracking-[8px] text-black">
               {subtitle}
             </div>
-            <div class='block font-bold text-sm lg:text-base leading-normal uppercase helvetica tracking-[8px] text-black'>
+            <div class="block font-bold text-sm lg:text-base leading-normal uppercase helvetica tracking-[8px] text-black">
               {date}
             </div>
           </div>

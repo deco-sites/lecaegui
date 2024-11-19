@@ -16,6 +16,14 @@ const PLACEMENT = {
   right: "flex-col text-left lg:flex-row",
 };
 
+export function LoadingFallback() {
+  return (
+    <div className="h-screen w-full flex justify-center align-center">
+      <span class="loading loading-spinner loading-md"></span>
+    </div>
+  );
+}
+
 export default function HeroFlats({
   title = "Click here to tweak this text however you want.",
   subtitle = "",
