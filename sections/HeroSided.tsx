@@ -64,10 +64,9 @@ export default function HeroFlats({
         {image && (
           <div class="w-full sm:w-1/2 h-full order-2 sm:order-2">
             <Image
-              width={640}
-              height={832}
+              width={1309}
+              height={1139}
               class="w-full h-full object-cover"
-              style={{ aspectRatio: "640 / 832" }}
               sizes="50vw"
               src={image}
               alt={title}
