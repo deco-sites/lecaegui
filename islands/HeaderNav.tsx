@@ -1,4 +1,4 @@
-import { useState } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
@@ -20,9 +20,34 @@ function HeaderNav({
   height,
 }: Nav) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    let lastScrollY = globalThis.scrollY;
+
+    const handleScroll = () => {
+      if (globalThis.scrollY > lastScrollY) {
+        // Rolando para baixo
+        setIsVisible(false);
+      } else {
+        // Rolando para cima
+        setIsVisible(true);
+      }
+      lastScrollY = globalThis.scrollY;
+    };
+
+    globalThis.addEventListener("scroll", handleScroll);
+    return () => {
+      globalThis.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="py-8 px-6 w-full bg-transparent fixed top-0 z-10">
+    <nav
+      className={`py-8 px-6 w-full bg-transparent fixed top-0 z-10 transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="max-w-7xl mx-auto flex flex-row items-center justify-between text-xl">
         <div className="flex items-center gap-8">
           <div className="flex items-center">
@@ -47,7 +72,7 @@ function HeaderNav({
             </a>
             <span>/</span>
             <a
-              href="#information" // Confirme que corresponde ao ID exato da seção
+              href="#information"
               onClick={(e) => handleSmoothScroll(e, "information")}
             >
               Informações
@@ -80,7 +105,7 @@ function HeaderNav({
               RSVP
             </a>
             <a
-              href="#information" // Confirme que corresponde ao ID exato da seção
+              href="#information"
               onClick={(e) => {
                 handleSmoothScroll(e, "information");
                 setMenuOpen(false);
@@ -89,7 +114,7 @@ function HeaderNav({
               Informações
             </a>
             <a
-              href="#faq"
+              href="#donate"
               onClick={(e) => {
                 handleSmoothScroll(e, "donate");
                 setMenuOpen(false);
@@ -104,7 +129,7 @@ function HeaderNav({
   );
 }
 
-// Função de scroll suave atualizada
+// Função de scroll suave
 function handleSmoothScroll(e: Event, id: string) {
   e.preventDefault();
   const element = document.getElementById(id);
