@@ -1,17 +1,15 @@
 import { useEffect, useState } from "preact/hooks";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
-  image: ImageWidget;
+
   title: string;
   subtitle: string;
   backgroundTexture: ImageWidget;
-  hideImage?: boolean;
 }
 
 export default function CountdownBanner(
-  { image, title, subtitle, backgroundTexture, hideImage }: Props,
+  { title, subtitle, backgroundTexture}: Props,
 ) {
   const targetDate = new Date("2025-03-05T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
@@ -57,17 +55,8 @@ export default function CountdownBanner(
         backgroundPosition: "center",
       }}
     >
-      {
-        hideImage ?? <Image
-        src={image}
-        alt="Background"
-        width={1920}
-        height={1080}
-        className="w-full h-full object-cover"
-        decoding="async"
-        loading="lazy"
-      />
-      }
+       
+        
       
 
       <div className="flex flex-col w-full bg-[#656D4A] py-12 px-14 items-center text-center md:flex-row md:justify-evenly md:text-left">
