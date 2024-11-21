@@ -6,6 +6,14 @@ export interface Props {
   backgroundTexture?: ImageWidget;
 }
 
+export function LoadingFallback() {
+  return (
+    <div className="h-screen w-full flex justify-center align-center">
+      <span class="loading loading-spinner loading-md"></span>
+    </div>
+  );
+}
+
 export default function ScreeImage({ image, backgroundTexture }: Props) {
   return (
     <div
