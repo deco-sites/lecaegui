@@ -54,13 +54,12 @@ export default function HeroFlats({
             } lg:py-36 gap-12 md:gap-20 items-center`}
           >
             {image && (
-              <div class="w-1/2 h-full">
+              <div class="w-full h-full">
                 <Image
-                  width={640}
-                  height={832}
+                  width={815}
+                  height={943}
                   class="w-full h-full object-contain"
-                  style={{ aspectRatio: "815 / 943" }}
-                  sizes="50vw"
+                  sizes="100vw"
                   src={image}
                   alt={title}
                   decoding="async"

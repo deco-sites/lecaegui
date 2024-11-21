@@ -25,7 +25,19 @@
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
       Helvetica, Arial, "Lucida Grande", sans-serif;
   }
+
+  .openOne {
+    font-family: "Open Sauce One";
+    font-weight: 400;
+  }
+
+  .openOneThin{
+    font-family: "Open Sauce One";
+    font-weight: 300;
+  }
 }
+
+
 
 @layer components {
 

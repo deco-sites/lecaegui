@@ -45,11 +45,12 @@ export default function HeroFlats({
           <div class="flex flex-col items-center md:items-start items-center space-y-4 lg:max-w-2xl animate-fadeIn">
             <div
               class="block text-5xl lg:text-8xl text-black"
-              style="font-family: Mr De Haviland"
+              style="font-family: Quincy CF"
             >
               {title}
             </div>
-            <div class="block text-sm lg:text-base leading-normal uppercase helvetica tracking-[8px] text-black">
+            <div class="block text-sm lg:text-base leading-normal uppercase tracking-[8px] text-black"
+                  style="font-family: 'Open Sauce one', sans-serif; font-weight: 300;">
               {subtitle}
             </div>
             <div class="block font-bold text-sm lg:text-base leading-normal uppercase helvetica tracking-[8px] text-black">

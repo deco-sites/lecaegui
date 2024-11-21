@@ -2,14 +2,13 @@ import { useEffect, useState } from "preact/hooks";
 import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
-
   title: string;
   subtitle: string;
   backgroundTexture: ImageWidget;
 }
 
 export default function CountdownBanner(
-  { title, subtitle, backgroundTexture}: Props,
+  { title, subtitle, backgroundTexture }: Props,
 ) {
   const targetDate = new Date("2025-03-05T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
@@ -55,10 +54,6 @@ export default function CountdownBanner(
         backgroundPosition: "center",
       }}
     >
-       
-        
-      
-
       <div className="flex flex-col w-full bg-[#656D4A] py-12 px-14 items-center text-center md:flex-row md:justify-evenly md:text-left">
         <div className="mb-6 md:mb-0">
           <p className="text-2xl uppercase text-[#7E8A5A]">{title}</p>
