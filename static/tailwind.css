@@ -3769,6 +3769,12 @@ input.tab:checked + .tab-content,
 .text-center {
   text-align: center;
 }
+.font-opensauce {
+  font-family: Open Sauce one Regular, sans-serif;
+}
+.font-quincy {
+  font-family: quincy-cf, serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;

@@ -20,28 +20,22 @@ export default defineApp(async (_req, ctx) => {
             `,
           }}
         /> 
+        <link rel="stylesheet" href="https://use.typekit.net/wpo1akf.css"></link>
 
         {/* Font definitions */}
         <style
           dangerouslySetInnerHTML={{
             __html: `
             @font-face {
-              font-family: 'Quincy CF';
-              src: url(${asset("https://use.typekit.net/wpo1akf.woff2")}) format('woff2');
-              font-weight: 100;
-              font-style: normal;
-              font-display: swap;
-            }
-            @font-face {
-              font-family: 'Open Sauce one';
-              src: url(${asset("static/OpenSauceOne-Regular.ttf")}) format('truetype');
+              font-family: 'Open Sauce one Regular';
+              src: url(${asset("OpenSauceOne-Regular.ttf")}) format('truetype');
               font-weight: 400;
               font-style: normal;
               font-display: swap;
             }
             @font-face {
-              font-family: 'Open Sauce one';
-              src: url(${asset("static/OpenSauceOne-Medium.ttf")}) format('truetype');
+              font-family: 'Open Sauce one Medium';
+              src: url(${asset("OpenSauceOne-Medium.ttf")}) format('truetype');
               font-weight: 300;
               font-style: normal;
               font-display: swap;

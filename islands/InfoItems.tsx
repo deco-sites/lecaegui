@@ -86,7 +86,7 @@ export default function Info({
           </div>
         )}
 
-        <h1 className="text-4xl lg:text-5xl text-[#10150B] font-bold mb-8 text-center md:text-left">
+        <h1 className="text-4xl font-quincy lg:text-5xl text-[#10150B] font-bold mb-8 text-center md:text-left">
           {title}
         </h1>
 

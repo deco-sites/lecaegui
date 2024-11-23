@@ -99,7 +99,7 @@ export default function HeroFlats({
               )}
 
               <div
-                class="inline-block text-[48px] leading-none font-medium"
+                class="inline-block text-[48px] font-quincy leading-none font-medium"
                 style={{ color: "#10150B" }}
                 dangerouslySetInnerHTML={{
                   __html: title,

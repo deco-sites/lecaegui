@@ -7,6 +7,10 @@ export default {
   theme: {
     container: { center: true },
     extend: {
+      fontFamily: {
+        "opensauce": ["Open Sauce one Regular",'sans-serif'],
+        "quincy": ["quincy-cf", "serif"]
+      },
       animation: {
         sliding: "sliding 30s linear infinite",
         fadeIn: "fadeIn 1.5s ease-in-out forwards",

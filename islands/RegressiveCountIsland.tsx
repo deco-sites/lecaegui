@@ -57,7 +57,7 @@ export default function CountdownBanner(
       <div className="flex flex-col w-full bg-[#656D4A] py-12 px-14 items-center text-center md:flex-row md:justify-evenly md:text-left">
         <div className="mb-6 md:mb-0">
           <p className="text-2xl uppercase text-[#7E8A5A]">{title}</p>
-          <h2 className="text-4xl text-white max-w-[19ch] break-words text-center lg:text-left">
+          <h2 className="text-4xl text-white font-quincy  max-w-[19ch] break-words text-center lg:text-left">
             {subtitle}
           </h2>
         </div>
