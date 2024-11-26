@@ -15,7 +15,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/HeroSided.tsx",
-        "title": "Alexia & Guilherme",
+        "title": "Alexia ",
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/43ab7c8a-43ce-464c-9a33-25e799a60ae7/valedouro2-1.svg",
         "subtitle": "SAVE THE DATE ",
         "guests": {
@@ -32,7 +32,8 @@
           }
         },
         "backgroundtexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
-        "date": " 03 . 05 . 2025"
+        "date": " 03 . 05 . 2025",
+        "titleBrake": "& Guilherme"
       }
     },
     {
