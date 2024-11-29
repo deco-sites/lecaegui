@@ -7,14 +7,14 @@ interface Props {
   alt?: string;
   width?: number;
   height?: number;
-  text?: string;
+  date?: string;
 }
 
 function Footer({
   image =
     "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4959/d7aa9290-074f-417c-99c3-5b0587c8c2ee",
   href = "https://deco.cx/",
-  text = "SAVE THE DATE — 05 . 03 . 2025",
+  date = "SAVE THE DATE — 05 . 30 . 2025",
   alt = "Made with deco.cx",
   height = 30,
   width = 60,
@@ -31,7 +31,7 @@ function Footer({
             href={href || ""}
           />
         )}
-        {text && <p class="text-left md:ml-auto Quincy CF">{text}</p>}
+        {date && <p class="text-left md:ml-auto Quincy CF">{date}</p>}
       </div>
     </div>
   );
