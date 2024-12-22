@@ -42,19 +42,42 @@ export default function Info({
           >
             {item.image && (
               <Image
-                  src={item.image}
-                  alt={item.title}
-                  width={400}
-                  className="w-full h-64 object-cover"
-                  decoding="async"
-                  loading="lazy"
-                />
-              )
-            }
+                src={item.image}
+                alt={item.title}
+                width={400}
+                className="w-full h-64 object-cover"
+                decoding="async"
+                loading="lazy"
+              />
+            )}
             <div className="p-8 text-left">
               <h3 className="text-4xl font-semibold text-[#10150B] mb-2">
                 {item.title}
               </h3>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {item.site && (
+                  <a
+                    href={item.site}
+                    target="_blank"
+                    className="px-4 py-1 text-sm bg-[#656D4A] text-white rounded-full flex items-center gap-1"
+                  >
+                    <span>🌐</span>
+                    <span>Site</span>
+                  </a>
+                )}
+                {item.phone && (
+                  <div className="px-6 py-1 text-sm bg-[#656D4A] text-white rounded-full flex items-center gap-1">
+                    <span>📞</span>
+                    <span>{item.phone}</span>
+                  </div>
+                )}
+                {item.distance && (
+                  <div className="px-6 py-1 text-sm bg-[#656D4A] text-white rounded-full flex items-center gap-1">
+                    <span>➜</span>
+                    <span>{item.distance.replace('min', 'minutos de distância do evento')}</span>
+                  </div>
+                )}
+              </div>
               <p className="text-lg text-[#656D4A]">{item.description}</p>
             </div>
           </div>
