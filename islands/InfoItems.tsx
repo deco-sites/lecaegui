@@ -4,7 +4,7 @@ import Image from "apps/website/components/Image.tsx";
 
 export interface Option {
   title: string;
-  image: ImageWidget;
+  image?: ImageWidget;
   description: string;
 }
 
@@ -36,14 +36,17 @@ export default function Info({
             key={index}
             className="min-w-[300px] border border-[#656D4A] flex flex-col items-center mx-4 md:mx-0 rounded"
           >
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={400}
-              className="w-full h-64 object-cover"
-              decoding="async"
-              loading="lazy"
-            />
+            {item.image && (
+              <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={400}
+                  className="w-full h-64 object-cover"
+                  decoding="async"
+                  loading="lazy"
+                />
+              )
+            }
             <div className="p-8 text-left">
               <h3 className="text-4xl font-semibold text-[#10150B] mb-2">
                 {item.title}

@@ -39,10 +39,22 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/RegressiveCount.tsx",
+        "title": "SAVE THE DATE — 03 . 05 . 2025",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/b1f6555e-1266-43cf-9058-e8fb0ba63dde/itaipava3-1.svg",
+        "subtitle": "Contagem regressiva para o grande dia",
+        "backgroundTexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
+        "showImage": true,
+        "hideImage": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Hero-3.tsx",
+        "title": "Sobre o Casamento",
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/4ba323c0-9238-4951-bc34-6c87125a8bae/guiealexia-1.svg",
         "subtitle": "SAVE THE DATE — 03 . 05 . 2025",
-        "title": "Sobre o Casamento",
         "backgroundtexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
         "prefixIcon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/22e66769-9665-41c3-ab5e-021bc4db5c5f/Star-1.svg",
         "description": "Vamos curtir um fim de semana animado na Serra do Rio. A cerimônia e festa serão no sábado, dia 3 de Maio de 2025 às 15h.  Reserve a sua agenda e compre as suas passagens! Em breve, sugestões de hotéis por aqui."
@@ -51,21 +63,77 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/ScreenImage.tsx",
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/74949dc9-c36b-4dbd-abde-2ae560d67d64/itaipava3-1.png",
-        "backgroundTexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png"
+        "__resolveType": "site/sections/Info.tsx",
+        "title": "Informações & Acomodações",
+        "backgroundtexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
+        "prefixIcon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/22e66769-9665-41c3-ab5e-021bc4db5c5f/Star-1.svg",
+        "options": [
+          {
+            "items": [
+              {
+                "title": "Estefânia",
+                "description": "(24) 98814-8183"
+              },
+              {
+                "title": "Estefânia",
+                "description": "(24) 98814-8183"
+              },
+              {
+                "title": "Farley",
+                "description": "(24) 98111-0726"
+              },
+              {
+                "title": "Juh Leal",
+                "description": "(21) 99788-8513"
+              },
+              {
+                "title": "Necessaire",
+                "description": "(24) 98821-0081"
+              },
+              {
+                "title": "Ricardinho",
+                "description": "(24) 98112-1077"
+              },
+              {
+                "title": "Manu Salgado",
+                "description": "(24) 98866-3301"
+              },
+              {
+                "title": "Mariana Henter",
+                "description": "(24) 98146-1384"
+              },
+              {
+                "title": "Regiane",
+                "description": "(24) 98838-5331"
+              },
+              {
+                "title": "Natalia Sixel",
+                "description": "(21) 98217-3750"
+              },
+              {
+                "title": "Sol Vianna",
+                "description": "(24) 98881-3577"
+              },
+              {
+                "title": "Caroline Martins",
+                "description": "(24) 99204-6292"
+              },
+              {
+                "title": "Aurea Damião",
+                "description": "(24) 98845-3700"
+              }
+            ],
+            "label": "Maquiadores"
+          }
+        ]
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/RegressiveCount.tsx",
-        "title": "SAVE THE DATE — 03 . 05 . 2025",
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/b1f6555e-1266-43cf-9058-e8fb0ba63dde/itaipava3-1.svg",
-        "subtitle": "Contagem regressiva para o grande dia",
-        "backgroundTexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
-        "showImage": true,
-        "hideImage": true
+        "__resolveType": "site/sections/ScreenImage.tsx",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/74949dc9-c36b-4dbd-abde-2ae560d67d64/itaipava3-1.png",
+        "backgroundTexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png"
       }
     },
     {
