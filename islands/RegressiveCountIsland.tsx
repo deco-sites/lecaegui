@@ -10,7 +10,7 @@ export interface Props {
 export default function CountdownBanner(
   { title, subtitle, backgroundTexture }: Props,
 ) {
-  const targetDate = new Date("2025-03-05T00:00:00").getTime();
+  const targetDate = new Date("2025-05-03T18:00:00.000Z").getTime();
   const [timeLeft, setTimeLeft] = useState({
     dias: 0,
     horas: 0,
