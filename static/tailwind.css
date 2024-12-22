@@ -2498,6 +2498,9 @@ input.tab:checked + .tab-content,
 .tab-border {
   --tab-border: 1px;
 }
+.artboard.phone {
+  width: 320px;
+}
 .badge-lg {
   height: 1.5rem;
   font-size: 1rem;

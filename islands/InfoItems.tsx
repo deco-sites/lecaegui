@@ -6,6 +6,10 @@ export interface Option {
   title: string;
   image?: ImageWidget;
   description: string;
+  site?: string;
+  phone?: string;
+  distance?: string;
+  observation?: string;
 }
 
 export interface Props {

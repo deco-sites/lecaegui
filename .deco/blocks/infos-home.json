@@ -1,0 +1,126 @@
+{
+  "__resolveType": "site/sections/Info.tsx",
+  "title": "Informações & Acomodações",
+  "backgroundtexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
+  "prefixIcon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/22e66769-9665-41c3-ab5e-021bc4db5c5f/Star-1.svg",
+  "options": [
+    {
+      "items": [
+        {
+          "title": "Capim Limão",
+          "description": "Super recomendamos a Capim Limão! Já nos hospedamos lá e são excelentes, além da ótima localização.",
+          "image": "https://data.decoassets.com/lecaegui/8ac86b90-7366-49b6-9563-c9266df92826/capim-limao.jpeg",
+          "site": "https://www.instagram.com/capimlimaoitaipava/",
+          "phone": "+55 24 2220-4500",
+          "distance": "19 min"
+        },
+        {
+          "title": "Granja Brasil",
+          "description": "A Granja Brasil é uma opção de hotel muito confortável, prático e super bem localizado.",
+          "image": "https://data.decoassets.com/lecaegui/e4904a6c-abfb-442e-9bdc-41b8d19f842f/granja-brasil.jpeg",
+          "site": "http://www.granjabrasil.com.br/hotel",
+          "phone": "+55 24 2222-5155",
+          "distance": "17 min"
+        },
+        {
+          "title": "Parador Santarém",
+          "description": "Excelente pousada e muito bem localizada. Vão liberar a agenda para reservas em Maio/25 só no final de Janeiro.",
+          "image": "https://data.decoassets.com/lecaegui/9c31e0da-97a0-4732-b302-6053dad84650/parador-santarem.jpeg",
+          "site": "https://pousadaparadorsantarem.com.br/",
+          "phone": "+55 24 3111-8719",
+          "distance": "19 min"
+        },
+        {
+          "title": "Pousada Altenhaus",
+          "description": "A Pousada Altenhaus é maravilhosa! Fecham apenas pacote de 4 noites para o feriado (30/04 - 04/05).",
+          "image": "https://data.decoassets.com/lecaegui/8c54921c-e160-4b6d-9b3f-5939f2f5e156/altenhaus.jpeg",
+          "site": "https://www.pousadaaltenhaus.com.br/",
+          "phone": "+55 24 2222-2859",
+          "distance": "14 min"
+        },
+        {
+          "title": "Locanda Della Mimosa",
+          "description": "Super recomendamos a Locanda Della Mimosa! Já nos hospedamos lá e são excelentes. Vão liberar a agenda para reservas em Maio/25 só no final de Janeiro.",
+          "image": "https://data.decoassets.com/lecaegui/951a546f-abc0-4b09-af27-8d10985e6e32/locanda.jpeg",
+          "site": "https://locanda.com.br/unidades/della-mimosa",
+          "phone": "+55 24 99318-5417",
+          "distance": "30 min"
+        },
+        {
+          "title": "Bomtempo Hotel",
+          "description": "Ótima pousada e muito bem localizada.",
+          "image": "https://data.decoassets.com/lecaegui/4bca2e60-e0b8-4002-81b4-9430d9cff523/bomtempo.jpeg",
+          "site": "https://www.castelodeitaipavahoteis.com.br/hotel/bomtempo-itaipava-/",
+          "phone": "+55 24 99962-4432",
+          "distance": "20 min"
+        },
+        {
+          "title": "Pousada Vista do Vale",
+          "description": "A Vista do Vale é mais uma opção confortável e muito bem localizada.",
+          "image": "https://data.decoassets.com/lecaegui/f82f11a8-6b45-4258-91e8-3f978eb1ba4f/vista.jpeg",
+          "site": "https://vistadovale.com.br/pousada/",
+          "phone": "+55 24 99911-8327",
+          "distance": "20 min"
+        }
+      ],
+      "label": "Hotéis"
+    },
+    {
+      "items": [
+        {
+          "title": "Estefânia",
+          "description": "(24) 98814-8183"
+        },
+        {
+          "title": "Estefânia",
+          "description": "(24) 98814-8183"
+        },
+        {
+          "title": "Farley",
+          "description": "(24) 98111-0726"
+        },
+        {
+          "title": "Juh Leal",
+          "description": "(21) 99788-8513"
+        },
+        {
+          "title": "Necessaire",
+          "description": "(24) 98821-0081"
+        },
+        {
+          "title": "Ricardinho",
+          "description": "(24) 98112-1077"
+        },
+        {
+          "title": "Manu Salgado",
+          "description": "(24) 98866-3301"
+        },
+        {
+          "title": "Mariana Henter",
+          "description": "(24) 98146-1384"
+        },
+        {
+          "title": "Regiane",
+          "description": "(24) 98838-5331"
+        },
+        {
+          "title": "Natalia Sixel",
+          "description": "(21) 98217-3750"
+        },
+        {
+          "title": "Sol Vianna",
+          "description": "(24) 98881-3577"
+        },
+        {
+          "title": "Caroline Martins",
+          "description": "(24) 99204-6292"
+        },
+        {
+          "title": "Aurea Damião",
+          "description": "(24) 98845-3700"
+        }
+      ],
+      "label": "Maquiadores"
+    }
+  ]
+}
