@@ -1,0 +1,118 @@
+{
+  "__resolveType": "site/sections/Info.tsx",
+  "title": "Presentes",
+  "backgroundtexture": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/69337e71-0d15-4222-ac53-3baca2aeafc2/BG-Casamento.png",
+  "prefixIcon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lecaegui/22e66769-9665-41c3-ab5e-021bc4db5c5f/Star-1.svg",
+  "options": [
+    {
+      "items": [
+        {
+          "title": "Passeio de Barco em Mallorca — R$ 2990",
+          "description": "Ajude-nos a explorar as águas cristalinas de Mallorca em um passeio de barco inesquecível!",
+          "image": "https://data.decoassets.com/lecaegui/4b939130-239c-4e22-bcaa-7c1fdeaa0b42/DALLE-2024-12-22-18.43.33---A-luxurious-yacht-sailing-in-crystal-clear-turquoise-waters-near-Mallorca-surrounded-by-rocky-cliffs-and-lush-greenery-under-a-sunny-blue-sky.webp"
+        },
+        {
+          "title": "Jantar no Fortaleza Restaurant — R$ 1390",
+          "description": "Um jantar romântico no Fortaleza Restaurant, localizado no luxuoso Cap Rocat.",
+          "image": "https://data.decoassets.com/lecaegui/fd320061-48e6-49a6-93b4-45472d924ba9/DALLE-2024-12-22-18.44.17---A-romantic-fine-dining-setup-at-an-exclusive-seaside-restaurant-with-a-stunning-Mediterranean-view-at-sunset-soft-candlelight-on-the-table-and-gour.webp"
+        },
+        {
+          "title": "Visita ao Castelo de Bellver — R$ 190",
+          "description": "Nos ajude a visitar o icônico Castelo de Bellver e sua vista deslumbrante de Palma.",
+          "image": "https://data.decoassets.com/lecaegui/ffb615ba-5917-4b6b-a53f-615963c10812/DALLE-2024-12-22-18.44.40---A-historic-round-castle-atop-a-hill-with-panoramic-views-of-Palma-surrounded-by-Mediterranean-pine-trees-under-a-clear-sky.webp"
+        },
+        {
+          "title": "Tour de Vinícolas em Priorat — R$ 890",
+          "description": "Um tour pelas vinícolas de Priorat para degustar vinhos únicos e conhecer a região.",
+          "image": "https://data.decoassets.com/lecaegui/a66d1f25-79cd-45eb-8686-60f9c7be3e68/DALLE-2024-12-22-18.45.00---A-scenic-vineyard-in-Priorat-with-rows-of-lush-green-grapevines-on-rolling-hills-an-old-stone-winery-building-and-golden-sunlight-bathing-the-lands.webp"
+        },
+        {
+          "title": "Jantar no Disfrutar, Barcelona — R$ 1990",
+          "description": "Uma experiência gastronômica inesquecível no restaurante Disfrutar, com duas estrelas Michelin.",
+          "image": "https://data.decoassets.com/lecaegui/f4d7e8da-4a22-4818-acf2-471abf0d3181/DALLE-2024-12-22-18.45.19---A-stylish-gourmet-restaurant-interior-in-Barcelona-showcasing-an-artistic-plating-of-a-Michelin-starred-dish-on-a-modern-dining-table-with-soft-ambie.webp"
+        },
+        {
+          "title": "Passeio pelo Bairro Gótico — R$ 190",
+          "description": "Ajude-nos a explorar as ruas encantadoras e históricas do Bairro Gótico de Barcelona.",
+          "image": "https://data.decoassets.com/lecaegui/b5acb8d0-3aae-40b7-a247-5fdae8fce0af/DALLE-2024-12-22-18.45.44---Narrow-cobblestone-streets-of-the-Gothic-Quarter-in-Barcelona-with-ancient-stone-buildings-wrought-iron-balconies-and-warm-lighting-from-vintage-st.webp"
+        },
+        {
+          "title": "Estadia no Cap Rocat — R$ 4990",
+          "description": "Contribua para nossa estadia no exclusivo Cap Rocat, um refúgio de luxo em Mallorca.",
+          "image": "https://data.decoassets.com/lecaegui/d0373b31-1bce-4cb5-943d-6bd47d06f364/DALLE-2024-12-22-18.46.24---A-luxurious-fortress-hotel-overlooking-the-Mediterranean-Sea-with-infinity-pools-elegant-terraces-and-soft-ambient-lighting-at-dusk.webp"
+        },
+        {
+          "title": "Tour pelo Park Güell — R$ 290",
+          "description": "Nos ajude a explorar o famoso Park Güell, uma obra-prima de Gaudí em Barcelona.",
+          "image": "https://data.decoassets.com/lecaegui/0756418b-4f29-45ea-919c-e927c4e8273c/DALLE-2024-12-22-18.49.19---Vivid-mosaics-and-colorful-architectural-designs-by-Gaudi-in-Park-Guell-with-a-view-of-Barcelonas-skyline-under-a-sunny-blue-sky.webp"
+        },
+        {
+          "title": "Spa no Cap Rocat — R$ 990",
+          "description": "Uma sessão relaxante no spa de luxo do Cap Rocat, com vista para o Mediterrâneo.",
+          "image": "https://data.decoassets.com/lecaegui/3b1c4450-36ed-4901-a80e-e7ffdede218c/DALLE-2024-12-22-18.49.56---A-serene-spa-interior-overlooking-the-sea-featuring-a-massage-table-aromatherapy-candles-and-floor-to-ceiling-glass-windows-with-a-Mediterranean-vi.webp"
+        },
+        {
+          "title": "Cava em Penedès — R$ 590",
+          "description": "Uma visita às vinícolas de Penedès para experimentar os famosos cavas da região.",
+          "image": "https://data.decoassets.com/lecaegui/4e766b6c-ee5d-4df1-a478-8ae3b9429750/DALLE-2024-12-22-18.50.18---A-winery-in-Penedes-with-bottles-of-cava-displayed-in-a-rustic-stone-cellar-surrounded-by-oak-barrels-and-warm-golden-lighting.webp"
+        },
+        {
+          "title": "Café em Valldemossa — R$ 190",
+          "description": "Ajude-nos a tomar um café charmoso no vilarejo histórico de Valldemossa, em Mallorca.",
+          "image": "https://data.decoassets.com/lecaegui/valldemossa.jpeg"
+        },
+        {
+          "title": "Jantar no Tickets, Barcelona — R$ 1290",
+          "description": "Um jantar criativo e surpreendente no restaurante Tickets, em Barcelona.",
+          "image": "https://data.decoassets.com/lecaegui/tickets-barcelona.jpeg"
+        },
+        {
+          "title": "Visita ao Castelo de Siurana — R$ 290",
+          "description": "Contribua para nossa visita ao pitoresco castelo de Siurana, com vistas incríveis.",
+          "image": "https://data.decoassets.com/lecaegui/siurana-castle.jpeg"
+        },
+        {
+          "title": "Degustação de Vinhos em Clos Mogador — R$ 690",
+          "description": "Ajude-nos a descobrir os vinhos exclusivos da renomada vinícola Clos Mogador, em Priorat.",
+          "image": "https://data.decoassets.com/lecaegui/clos-mogador.jpeg"
+        },
+        {
+          "title": "Aulas de Culinária em Palma — R$ 890",
+          "description": "Nos ajude a aprender receitas mediterrâneas em uma aula de culinária local em Palma.",
+          "image": "https://data.decoassets.com/lecaegui/palma-cooking-class.jpeg"
+        },
+        {
+          "title": "Jantar no Andreu Genestra — R$ 1490",
+          "description": "Um jantar no restaurante Andreu Genestra, com uma estrela Michelin, em Mallorca.",
+          "image": "https://data.decoassets.com/lecaegui/andreu-genestra.jpeg"
+        },
+        {
+          "title": "Passeio pelo Passeig de Gràcia — R$ 190",
+          "description": "Ajude-nos a explorar a elegante avenida Passeig de Gràcia, cheia de lojas e arquitetura.",
+          "image": "https://data.decoassets.com/lecaegui/passeig-de-gracia.jpeg"
+        },
+        {
+          "title": "Jantar no Sea Club, Cap Rocat — R$ 1190",
+          "description": "Contribua para um jantar casual e romântico no Sea Club, em Cap Rocat.",
+          "image": "https://data.decoassets.com/lecaegui/sea-club.jpeg"
+        },
+        {
+          "title": "Tour de Gaudí Privado — R$ 1590",
+          "description": "Ajude-nos a fazer um tour exclusivo pelas obras mais emblemáticas de Gaudí, em Barcelona.",
+          "image": "https://data.decoassets.com/lecaegui/gaudi-tour.jpeg"
+        },
+        {
+          "title": "Brunch no El Palace, Barcelona — R$ 590",
+          "description": "Nos ajude a saborear um brunch luxuoso no icônico El Palace Barcelona.",
+          "image": "https://data.decoassets.com/lecaegui/el-palace-brunch.jpeg"
+        },
+        {
+          "title": "Exploração das Calas de Mallorca — R$ 990",
+          "description": "Contribua para a descoberta das belíssimas calas de Mallorca, como Cala Deià e Cala Mondragó.",
+          "image": "https://data.decoassets.com/lecaegui/mallorca-calas.jpeg"
+        }
+      ],
+      "label": "Presentes"
+    }
+  ]
+}

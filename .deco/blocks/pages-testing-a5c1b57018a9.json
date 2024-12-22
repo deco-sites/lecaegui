@@ -67,6 +67,9 @@
       }
     },
     {
+      "__resolveType": "info-gifts"
+    },
+    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/ScreenImage.tsx",
