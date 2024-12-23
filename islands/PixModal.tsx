@@ -3,13 +3,17 @@ import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   pixCode?: ImageWidget;
+  buttonText?: string;
+  id: string;
 }
 
 export default function PixModal({
   pixCode,
+  buttonText,
+  id,
 }: Props) {
   const handleClick = () => {
-    (document.getElementById("my_modal_1") as HTMLDialogElement)?.showModal();
+    (document.getElementById(`${id}`) as HTMLDialogElement)?.showModal();
   };
 
   return (
@@ -18,16 +22,16 @@ export default function PixModal({
         onClick={handleClick}
         class="btn rounded-full bg-[#656D4A] text-white hover:bg-[#4A4F3A]"
       >
-        Doar agora!
+        {buttonText}
       </button>
-      <dialog id="my_modal_1" className="modal">
-        <div className="modal-box">
+      <dialog id={id} className="modal">
+        <div className="modal-box p-4 max-w-sm w-auto flex flex-col items-center">
           {pixCode && (
-            <div class="w-1/2 h-full">
+            <div className="flex justify-center items-center mb-4">
               <Image
                 width={240}
                 height={240}
-                class="w-full h-full object-contain"
+                class="object-contain"
                 src={pixCode}
                 decoding="async"
                 loading="lazy"
@@ -35,9 +39,11 @@ export default function PixModal({
             </div>
           )}
 
-          <div className="modal-action">
+          <div className="modal-action w-full flex justify-center">
             <form method="dialog">
-              <button className="btn">Fechar</button>
+              <button className="btn bg-[#656D4A] text-white hover:bg-[#4A4F3A]">
+                Fechar
+              </button>
             </form>
           </div>
         </div>
