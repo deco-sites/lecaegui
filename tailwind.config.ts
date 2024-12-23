@@ -8,8 +8,8 @@ export default {
     container: { center: true },
     extend: {
       fontFamily: {
-        "opensauce": ["Open Sauce one Regular",'sans-serif'],
-        "quincy": ["quincy-cf", "serif"]
+        "opensauce": ["Open Sauce one Regular", "sans-serif"],
+        "quincy": ["quincy-cf", "serif"],
       },
       animation: {
         sliding: "sliding 30s linear infinite",

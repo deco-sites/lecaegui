@@ -19,8 +19,9 @@ export default defineApp(async (_req, ctx) => {
             @view-transition { navigation: auto; }
             `,
           }}
-        /> 
-        <link rel="stylesheet" href="https://use.typekit.net/wpo1akf.css"></link>
+        />
+        <link rel="stylesheet" href="https://use.typekit.net/wpo1akf.css">
+        </link>
 
         {/* Font definitions */}
         <style
@@ -42,7 +43,7 @@ export default defineApp(async (_req, ctx) => {
             }
             `,
           }}
-        /> 
+        />
 
         {/* Tailwind v3 CSS file */}
         <link

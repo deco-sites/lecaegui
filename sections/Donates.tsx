@@ -4,8 +4,8 @@ import { DonorList } from "site/loaders/donates.ts";
 import PixModal from "site/islands/PixModal.tsx";
 
 export interface pixs {
-  title: string
-  qrCode: ImageWidget
+  title: string;
+  qrCode: ImageWidget;
 }
 
 export interface Props {
@@ -17,7 +17,7 @@ export interface Props {
   backgroundtexture?: ImageWidget;
   prefixIcon?: ImageWidget;
   donors?: DonorList;
-  pixs: pixs[]
+  pixs: pixs[];
 }
 
 const PLACEMENT = {
@@ -40,10 +40,9 @@ export default function HeroFlats({
   image = "https://placehold.co/3000x1800",
   placement = "right",
   backgroundtexture,
-  prefixIcon, 
-  pixs
+  prefixIcon,
+  pixs,
 }: Props) {
-
   return (
     <nav
       id="donate"
@@ -75,33 +74,35 @@ export default function HeroFlats({
               />
 
               {/* Contêiner para Cards sobrepostos com mais espaçamento */}
-              {/* <div class="absolute inset-0 flex flex-col items-center justify-center gap-8 p-12">
-                
+              {
+                /* <div class="absolute inset-0 flex flex-col items-center justify-center gap-8 p-12">
+
                 <div class="flex gap-8">
                   <div class="bg-white p-6 shadow-lg rounded-lg">Card 1</div>
                   <div class="bg-white p-6 shadow-lg rounded-lg">Card 2</div>
                   <div class="bg-white p-6 shadow-lg rounded-lg">Card 3</div>
                 </div>
 
-                
+
                 <div class="flex gap-8">
                   <div class="bg-white p-6 shadow-lg rounded-lg">Card 4</div>
                   <div class="bg-white p-6 shadow-lg rounded-lg">Card 5</div>
                 </div>
 
-                
+
                 <div class="flex gap-8">
                   <div class="bg-white p-6 shadow-lg rounded-lg">Card 6</div>
                   <div class="bg-white p-6 shadow-lg rounded-lg">Card 7</div>
                   <div class="bg-white p-6 shadow-lg rounded-lg">Card 8</div>
                 </div>
 
-                
+
                 <div class="flex gap-8">
                   <div class="bg-white p-6 shadow-lg rounded-lg">Card 9</div>
                   <div class="bg-white p-6 shadow-lg rounded-lg">Card 10</div>
                 </div>
-              </div> */}
+              </div> */
+              }
             </div>
           )}
 
@@ -150,7 +151,12 @@ export default function HeroFlats({
             </p>
             <div class="flex gap-3">
               {pixs.map((pix, index) => (
-                <PixModal key={index} id={`pix-modal-${index}`} pixCode={pix.qrCode} buttonText={pix.title} />
+                <PixModal
+                  key={index}
+                  id={`pix-modal-${index}`}
+                  pixCode={pix.qrCode}
+                  buttonText={pix.title}
+                />
               ))}
             </div>
           </div>
